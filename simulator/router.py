@@ -221,19 +221,42 @@ def build_simulator_router() -> APIRouter:
             db.execute(delete(ExamHelperProcessedMessageRow).where(ExamHelperProcessedMessageRow.wa_id == phone))
         return _response(phone)
 
+    from pathlib import Path
+
     @router.get("/document/{document_id}")
     def document(document_id: str):
         item = _store.get_document(document_id)
+
         if item is None:
-            log.warning("Simulator document not found document_id=%s", document_id)
-            raise HTTPException(status_code=404, detail="Document not found or simulator was restarted.")
+            log.warning(
+                "Simulator document not found document_id=%s",
+                document_id,
+            )
+            raise HTTPException(
+                status_code=404,
+                detail="Document not found or simulator was restarted.",
+            )
+
         content, filename = item
-        log.info("Simulator document served document_id=%s bytes=%s", document_id, len(content))
-        safe_name = filename.replace('"', "") or "document.pdf"
+
+        safe_name = filename.replace('"', "") or "document"
+        suffix = Path(safe_name).suffix.lower()
+
+        if suffix == ".docx":
+            media_type = (
+                "application/vnd.openxmlformats-officedocument."
+                "wordprocessingml.document"
+            )
+        else:
+            media_type = "application/pdf"
+
         return Response(
             content=content,
-            media_type="application/pdf",
-            headers={"Content-Disposition": f'inline; filename="{safe_name}"'},
+            media_type=media_type,
+            headers={
+                "Content-Disposition":
+                    f'inline; filename="{safe_name}"'
+            },
         )
 
     return router

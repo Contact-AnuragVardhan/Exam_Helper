@@ -24,11 +24,13 @@ from .models import (
 )
 from .storage import (
     get_answer_key_pdf_bytes,
+    get_exam_docx_bytes,
     get_exam_pdf_bytes,
     get_exam_record,
     list_feedback_exams,
     list_teacher_exams,
     load_teacher_profile,
+    materialize_exam_docx,
     materialize_exam_pdf,
     upsert_exam_record,
 )
@@ -338,6 +340,7 @@ class TeacherWorkflow:
         exam_id = result["exam_id"]
         out_dir = Path(result["output_dir"])
         exam_pdf = out_dir / "exam.pdf"
+        exam_docx = out_dir / "exam.docx"
         key_pdf = out_dir / "answer_key.pdf"
         record = ExamRecord(
             exam_id=exam_id,
@@ -367,6 +370,7 @@ class TeacherWorkflow:
             "answer_key_text": (out_dir / "answer_key.txt").read_text(encoding="utf-8") if (out_dir / "answer_key.txt").exists() else "",
             "validation_text": (out_dir / "validation_report.txt").read_text(encoding="utf-8") if (out_dir / "validation_report.txt").exists() else "",
             "exam_pdf": exam_pdf.read_bytes() if exam_pdf.exists() else b"",
+            "exam_docx": exam_docx.read_bytes() if exam_docx.exists() else b"",
             "answer_key_pdf": key_pdf.read_bytes() if key_pdf.exists() else b"",
         }
         upsert_exam_record(record, artifacts=artifacts)
@@ -414,6 +418,10 @@ class TeacherWorkflow:
         record = self._require_exam(exam_id)
         return get_exam_pdf_bytes(record.exam_id)
 
+    def exam_docx_bytes(self, exam_id: str | None = None) -> bytes:
+        record = self._require_exam(exam_id)
+        return get_exam_docx_bytes(record.exam_id)
+
     def answer_key_pdf_bytes(self, exam_id: str | None = None) -> bytes:
         record = self._require_exam(exam_id)
         return get_answer_key_pdf_bytes(record.exam_id)
@@ -421,6 +429,10 @@ class TeacherWorkflow:
     def exam_pdf_path(self, exam_id: str | None = None) -> Path:
         record = self._require_exam(exam_id)
         return materialize_exam_pdf(record.exam_id, answer_key=False)
+
+    def exam_docx_path(self, exam_id: str | None = None) -> Path:
+        record = self._require_exam(exam_id)
+        return materialize_exam_docx(record.exam_id)
 
     def answer_key_pdf_path(self, exam_id: str | None = None) -> Path:
         record = self._require_exam(exam_id)

@@ -76,6 +76,7 @@ class ExamHelperExamRow(Base):
     answer_key_text: Mapped[str] = mapped_column(Text, nullable=False, default="")
     validation_text: Mapped[str] = mapped_column(Text, nullable=False, default="")
     exam_pdf: Mapped[bytes | None] = mapped_column(LargeBinary, nullable=True)
+    exam_docx: Mapped[bytes | None] = mapped_column(LargeBinary, nullable=True)
     answer_key_pdf: Mapped[bytes | None] = mapped_column(LargeBinary, nullable=True)
 
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), nullable=False, default=utc_now, index=True)

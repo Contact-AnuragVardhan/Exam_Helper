@@ -7,7 +7,7 @@ from pathlib import Path
 from .logger import get_logger
 from .paths import output_exams_dir
 from .content_gate import syllabus_display_from_exam
-from .renderer import render_answer_key_pdf, render_answer_key_txt, render_exam_pdf, render_exam_txt
+from .renderer import render_answer_key_pdf, render_answer_key_txt, render_exam_docx, render_exam_pdf, render_exam_txt
 from .validator import report_text
 
 
@@ -31,6 +31,7 @@ def save_exam(exam: dict, blueprint: dict, report: dict, exam_id: str | None = N
     (out / "blueprint.json").write_text(json.dumps(blueprint, ensure_ascii=False, indent=2), encoding="utf-8")
     (out / "exam.txt").write_text(render_exam_txt(exam), encoding="utf-8")
     render_exam_pdf(exam, out / "exam.pdf")
+    render_exam_docx(exam, out / "exam.docx")
     (out / "answer_key.txt").write_text(render_answer_key_txt(exam), encoding="utf-8")
     render_answer_key_pdf(exam, out / "answer_key.pdf")
     (out / "validation_report.txt").write_text(report_text(report), encoding="utf-8")

@@ -30,9 +30,9 @@ It uses the existing `teacher_profile` table for teacher lookup and creates thes
 
 - `exam_helper_sessions` — conversation state and current exam selections.
 - `exam_helper_processed_messages` — webhook message-id deduplication.
-- `exam_helper_exams` — exam metadata, status, feedback, generated JSON/text payloads, exam PDF and answer-key PDF.
+- `exam_helper_exams` — exam metadata, status, feedback, generated JSON/text payloads, exam PDF, exam Word document, and answer-key PDF.
 
-Generated files are only temporary build artifacts. The durable PDFs and generation payload are stored in PostgreSQL, so no Render persistent disk is required.
+Generated files are only temporary build artifacts. The durable PDF/Word artifacts and generation payload are stored in PostgreSQL, so no Render persistent disk is required.
 
 ## Required Render variables
 

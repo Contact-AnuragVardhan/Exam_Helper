@@ -60,13 +60,25 @@ BAD_SELECTION = "That selection is not valid. Reply with numbers like 1,2 or ALL
 HELP_TEXT = (
     "HELP\n"
     "\n"
-    "1. Configure Exam if you need to change Subject, Grade, Class, or Output Language.\n"
-    "2. Create Exam.\n"
-    "3. Select Chapters.\n"
-    "4. Select Topics or use ALL.\n"
-    "5. Generate.\n"
-    "6. Review PDF.\n"
-    "7. Submit to Principal.\n"
+    "Basic Steps to Configure, Create, View & Share EXAM\n"
+    "\n"
+    "1. Configure Exam\n"
+    "   - Select Subject\n"
+    "   - Select Grade\n"
+    "   - Save Config & Return\n"
+    "\n"
+    "2. Create Exam\n"
+    "   - Select Chapters\n"
+    "   - Select Topics or use ALL\n"
+    "   - Review Selection\n"
+    "   - Generate Exam - can take up to 2 minutes\n"
+    "\n"
+    "3. View and Share EXAM/Key\n"
+    "   - View EXAM PDF / Word file\n"
+    "   - Share / Print EXAM file\n"
+    "   - View Answer Key\n"
+    "   - Save EXAM\n"
+    "   - Submit to Principal\n"
     "\n"
     "Send MENU anytime to return to Main Menu."
 )
@@ -550,7 +562,7 @@ class WhatsAppAdapter:
             self._send_my_exams(wa_id, wf)
             return
         if choice == 1:
-            self._send_exam_document(wa_id, wf, exam_id)
+            self._send_exam_exports(wa_id, wf, exam_id)
             self._send_exam_detail(wa_id, wf, exam_id)
         elif choice == 2:
             self._send_key_document(wa_id, wf, exam_id)
@@ -574,7 +586,7 @@ class WhatsAppAdapter:
             return
         if session.feedback_exam_id:
             if choice == 1:
-                self._send_exam_document(wa_id, wf, session.feedback_exam_id)
+                self._send_exam_exports(wa_id, wf, session.feedback_exam_id)
                 self._send_feedback_detail(wa_id, wf, session.feedback_exam_id)
                 return
             self._reply_unknown(wa_id, session, wf)
@@ -600,7 +612,7 @@ class WhatsAppAdapter:
         session.pending_language = cfg.output_language
 
     def _generate(self, wa_id: str, session: WhatsAppSession, wf: TeacherWorkflow) -> None:
-        self.client.send_text(wa_id, "Creating your exam. This may take a little time...")
+        self.client.send_text(wa_id, "Creating your exam. This may take up to 2 minutes...")
         try:
             record = wf.generate_exam()
         except ValueError as exc:
@@ -623,7 +635,7 @@ class WhatsAppAdapter:
         session.last_exam_id = record.exam_id
         session.state = STATE_POST_GENERATE
         self.client.send_text(wa_id, f"EXAM CREATED ✓\nExam ID: {record.exam_id}")
-        self._send_exam_document(wa_id, wf, record.exam_id, filename=self._exam_filename(record))
+        self._send_exam_exports(wa_id, wf, record.exam_id, pdf_filename=self._exam_filename(record))
         self.client.send_text(wa_id, POST_GENERATE_MENU)
         self._log(wa_id, session, "generate", exam_id=record.exam_id, success=True)
 
@@ -656,6 +668,42 @@ class WhatsAppAdapter:
         name = filename or (self._exam_filename(rec) if rec else "exam.pdf")
         self.client.send_document_bytes(wa_id, content, filename=name)
 
+    def _send_exam_word_document(
+        self,
+        wa_id: str,
+        wf: TeacherWorkflow,
+        exam_id: str,
+        filename: str | None = None,
+    ) -> None:
+        try:
+            content = wf.exam_docx_bytes(exam_id or None)
+        except ValueError as exc:
+            self.client.send_text(wa_id, str(exc))
+            return
+        if not content:
+            log.error("exam docx missing exam_id=%s", exam_id)
+            self.client.send_text(wa_id, "The exam Word document is not available yet.")
+            return
+        rec = wf.get_exam(exam_id) if exam_id else wf.last_exam
+        name = filename or (self._exam_docx_filename(rec) if rec else "exam.docx")
+        self.client.send_document_bytes(wa_id, content, filename=name)
+
+    def _send_exam_exports(
+        self,
+        wa_id: str,
+        wf: TeacherWorkflow,
+        exam_id: str,
+        pdf_filename: str | None = None,
+    ) -> None:
+        self._send_exam_document(wa_id, wf, exam_id, filename=pdf_filename)
+        rec = wf.get_exam(exam_id) if exam_id else wf.last_exam
+        self._send_exam_word_document(
+            wa_id,
+            wf,
+            exam_id,
+            filename=self._exam_docx_filename(rec) if rec else None,
+        )
+
     def _send_key_document(self, wa_id: str, wf: TeacherWorkflow, exam_id: str) -> None:
         try:
             content = wf.answer_key_pdf_bytes(exam_id or None)
@@ -675,7 +723,7 @@ class WhatsAppAdapter:
         profile = wf.get_teacher_profile()
         name = cfg.teacher_name or getattr(profile, "teacher_name", "Teacher")
         text = (
-            "TEACHER EXAM(Release 1)\n"
+            "TEACHER EXAM(Release 2)\n"
             "\n"
             f"Welcome, {name}\n"
             "\n"
@@ -784,12 +832,6 @@ class WhatsAppAdapter:
             lines.extend(f"- {name}" for name in review["selected_chapters"])
         else:
             lines.append("- (none)")
-        lines.append("")
-        lines.append("Topics:")
-        if review["selected_topics"]:
-            lines.extend(f"- {name}" for name in review["selected_topics"])
-        else:
-            lines.append("- (none)")
         lines.extend(
             [
                 "",
@@ -831,7 +873,7 @@ class WhatsAppAdapter:
             f"Class: {rec.class_id}",
             f"Status: {self._status_label(rec.status)}",
             "",
-            "1. Send Exam PDF",
+            "1. Send Exam PDF + Word",
             "2. Send Answer Key",
         ]
         if rec.status == STATUS_DRAFT:
@@ -870,7 +912,7 @@ class WhatsAppAdapter:
             "Feedback:\n"
             f"{rec.principal_feedback or '(none)'}\n"
             "\n"
-            "1. Send Exam PDF\n"
+            "1. Send Exam PDF + Word\n"
             "0. Back"
         )
         self.client.send_text(wa_id, text)
@@ -880,6 +922,9 @@ class WhatsAppAdapter:
         class_id = str(record.class_id or "class").replace(" ", "")
         exam_id = str(record.exam_id or "exam").replace(" ", "_")
         return f"Grade{record.grade}_{subj}_{class_id}_{exam_id}.pdf"
+
+    def _exam_docx_filename(self, record) -> str:
+        return self._exam_filename(record).replace(".pdf", ".docx")
 
     def _key_filename(self, record) -> str:
         return self._exam_filename(record).replace(".pdf", "_AnswerKey.pdf")

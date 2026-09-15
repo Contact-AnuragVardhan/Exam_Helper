@@ -248,13 +248,6 @@ def review_selection_ui(wf: TeacherWorkflow) -> str | None:
     else:
         print("- (none)")
     print()
-    print("Selected Topics:")
-    if review["selected_topics"]:
-        for name in review["selected_topics"]:
-            print(f"- {name}")
-    else:
-        print("- (none)")
-    print()
     print(f"Question Source: {review['question_source']}")
     print(f"Existing Exam Profile: {review['exam_profile']}")
     print()
@@ -281,7 +274,7 @@ def generate_exam_ui(wf: TeacherWorkflow) -> bool:
         print(f"Could not create the exam: {e}")
         return False
     print("Validating...")
-    print("Creating PDF...")
+    print("Creating PDF and Word document...")
     print("Done.")
     return True
 
@@ -299,29 +292,32 @@ def exam_created_menu(wf: TeacherWorkflow) -> str:
         print(f"Grade: {rec.grade}")
         print(f"Class: {rec.class_id}")
         print()
-        print("1. View Exam")
-        print("2. View Answer Key")
-        print("3. Save Exam")
-        print("4. Submit to Principal")
-        print("5. Create Another Exam")
+        print("1. View Exam PDF")
+        print("2. View Exam Word")
+        print("3. View Answer Key")
+        print("4. Save Exam")
+        print("5. Submit to Principal")
+        print("6. Create Another Exam")
         print("0. Main Menu")
         print()
         choice = _ask()
         if choice == "1":
             _open_path(wf.exam_pdf_path(rec.exam_id))
         elif choice == "2":
-            _open_path(wf.answer_key_pdf_path(rec.exam_id))
+            _open_path(wf.exam_docx_path(rec.exam_id))
         elif choice == "3":
+            _open_path(wf.answer_key_pdf_path(rec.exam_id))
+        elif choice == "4":
             wf.save_exam(rec.exam_id)
             print("Exam saved.")
-        elif choice == "4":
+        elif choice == "5":
             try:
                 rec = wf.submit_exam(rec.exam_id)
                 print()
                 print("Exam submitted to Principal.")
             except Exception as e:
                 print(f"{e}")
-        elif choice == "5":
+        elif choice == "6":
             wf.reset_create_selection()
             return "create"
         elif choice == "0":
@@ -395,18 +391,21 @@ def exam_details_menu(wf: TeacherWorkflow, exam_id: str) -> None:
         for name in rec.selected_chapters or []:
             print(f"- {name}")
         print()
-        print("1. View Exam")
-        print("2. View Answer Key")
+        print("1. View Exam PDF")
+        print("2. View Exam Word")
+        print("3. View Answer Key")
         if rec.status == STATUS_DRAFT:
-            print("3. Submit to Principal")
+            print("4. Submit to Principal")
         print("0. Back")
         print()
         choice = _ask()
         if choice == "1":
             _open_path(wf.exam_pdf_path(rec.exam_id))
         elif choice == "2":
+            _open_path(wf.exam_docx_path(rec.exam_id))
+        elif choice == "3":
             _open_path(wf.answer_key_pdf_path(rec.exam_id))
-        elif choice == "3" and rec.status == STATUS_DRAFT:
+        elif choice == "4" and rec.status == STATUS_DRAFT:
             try:
                 wf.submit_exam(rec.exam_id)
                 print()
@@ -494,12 +493,15 @@ def principal_feedback_menu(wf: TeacherWorkflow) -> None:
         print("Feedback:")
         print(rec.principal_feedback or "(none)")
         print()
-        print("1. View Exam")
+        print("1. View Exam PDF")
+        print("2. View Exam Word")
         print("0. Back")
         print()
         choice = _ask()
         if choice == "1":
             _open_path(wf.exam_pdf_path(rec.exam_id))
+        elif choice == "2":
+            _open_path(wf.exam_docx_path(rec.exam_id))
         elif choice == "0":
             return
         else:
@@ -510,11 +512,25 @@ def help_menu() -> None:
     while True:
         _banner("HELP")
         print()
-        print("1. Configure Exam if you need to change Subject, Grade, or Class.")
-        print("2. Create Exam and select Chapters.")
-        print("3. Select Topics or use ALL.")
-        print("4. Generate and review the PDF.")
-        print("5. Save and Submit to Principal.")
+        print("Basic Steps to Configure, Create, View & Share EXAM")
+        print()
+        print("1. Configure Exam")
+        print("   - Select Subject")
+        print("   - Select Grade")
+        print("   - Save Config & Return")
+        print()
+        print("2. Create Exam")
+        print("   - Select Chapters")
+        print("   - Select Topics or use ALL")
+        print("   - Review Selection")
+        print("   - Generate Exam - can take up to 2 minutes")
+        print()
+        print("3. View and Share EXAM/Key")
+        print("   - View EXAM PDF / Word file")
+        print("   - Share / Print EXAM file")
+        print("   - View Answer Key")
+        print("   - Save EXAM")
+        print("   - Submit to Principal")
         print()
         print("0. Back")
         print()
@@ -525,7 +541,7 @@ def help_menu() -> None:
 def main_menu(wf: TeacherWorkflow) -> None:
     while True:
         cfg = wf.get_current_config()
-        _banner("TEACHER EXAM")
+        _banner("TEACHER EXAM(Release 2)")
         print()
         print(f"Welcome, {cfg.teacher_name}")
         print()

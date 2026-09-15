@@ -27,7 +27,7 @@ Application state is stored in PostgreSQL rather than JSON files or a Render per
 - `teacher_profile` — existing shared teacher profile table.
 - `exam_helper_sessions` — WhatsApp state and selections.
 - `exam_helper_processed_messages` — inbound message dedupe.
-- `exam_helper_exams` — exam metadata, status, feedback, generation data, exam PDF and answer-key PDF.
+- `exam_helper_exams` — exam metadata, status, feedback, generation data, exam PDF, exam Word document, and answer-key PDF.
 
 `DATABASE_AUTO_CREATE_TABLES=true` creates the Exam_Helper tables at startup without replacing the existing `teacher_profile` table.
 

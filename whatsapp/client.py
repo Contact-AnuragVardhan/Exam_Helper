@@ -157,10 +157,16 @@ class WhatsAppClient:
     def _upload_media_bytes(self, content: bytes, filename: str) -> str:
         import httpx
 
+        suffix = Path(filename).suffix.lower()
+        mime_type = (
+            "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            if suffix == ".docx"
+            else "application/pdf"
+        )
         files = {
-            "file": (filename, content, "application/pdf"),
+            "file": (filename, content, mime_type),
             "messaging_product": (None, "whatsapp"),
-            "type": (None, "application/pdf"),
+            "type": (None, mime_type),
         }
         with httpx.Client(timeout=60.0) as client:
             resp = client.post(self._media_url(), headers=self._headers(), files=files)

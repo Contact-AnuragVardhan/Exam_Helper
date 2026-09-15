@@ -129,9 +129,12 @@ def upsert_exam_record(record: ExamRecord, artifacts: dict[str, Any] | None = No
             row.answer_key_text = str(artifacts.get("answer_key_text") or "")
             row.validation_text = str(artifacts.get("validation_text") or "")
             exam_pdf = artifacts.get("exam_pdf")
+            exam_docx = artifacts.get("exam_docx")
             answer_pdf = artifacts.get("answer_key_pdf")
             if exam_pdf is not None:
                 row.exam_pdf = bytes(exam_pdf)
+            if exam_docx is not None:
+                row.exam_docx = bytes(exam_docx)
             if answer_pdf is not None:
                 row.answer_key_pdf = bytes(answer_pdf)
     return record
@@ -178,6 +181,29 @@ def get_exam_pdf_bytes(exam_id: str) -> bytes:
         return bytes(row.exam_pdf)
 
 
+
+def get_exam_docx_bytes(exam_id: str) -> bytes:
+    with db_session() as db:
+        row = db.get(ExamHelperExamRow, exam_id)
+        if row is None:
+            raise ValueError("Exam Word document is not available.")
+        if row.exam_docx:
+            return bytes(row.exam_docx)
+
+        # Backward compatibility: older exams were persisted before DOCX support.
+        # Rebuild their Word file from the durable exam JSON when possible.
+        exam = row.exam_json or {}
+        if not exam:
+            raise ValueError("Exam Word document is not available.")
+        from services.renderer import render_exam_docx
+
+        directory = Path(tempfile.gettempdir()) / "exam_helper" / exam_id
+        directory.mkdir(parents=True, exist_ok=True)
+        path = directory / "exam.docx"
+        render_exam_docx(exam, path)
+        row.exam_docx = path.read_bytes()
+        return bytes(row.exam_docx)
+
 def get_answer_key_pdf_bytes(exam_id: str) -> bytes:
     with db_session() as db:
         row = db.get(ExamHelperExamRow, exam_id)
@@ -202,6 +228,7 @@ def get_exam_artifacts(exam_id: str) -> dict[str, Any]:
             "answer_key_text": row.answer_key_text or "",
             "validation_text": row.validation_text or "",
             "exam_pdf": bytes(row.exam_pdf or b""),
+            "exam_docx": bytes(row.exam_docx or b""),
             "answer_key_pdf": bytes(row.answer_key_pdf or b""),
         }
 
@@ -214,3 +241,12 @@ def materialize_exam_pdf(exam_id: str, *, answer_key: bool = False) -> Path:
     path = directory / name
     path.write_bytes(content)
     return path
+
+def materialize_exam_docx(exam_id: str) -> Path:
+    content = get_exam_docx_bytes(exam_id)
+    directory = Path(tempfile.gettempdir()) / "exam_helper" / exam_id
+    directory.mkdir(parents=True, exist_ok=True)
+    path = directory / "exam.docx"
+    path.write_bytes(content)
+    return path
+

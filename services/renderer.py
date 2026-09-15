@@ -5,6 +5,13 @@ import struct
 from dataclasses import dataclass
 from pathlib import Path
 
+from docx import Document
+from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT, WD_TABLE_ALIGNMENT
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
+from docx.shared import Inches, Pt
+
 from .logger import get_logger
 from .match_columns_render import (
     is_match_item,
@@ -1100,6 +1107,123 @@ def render_styled_pdf(doc_lines: list[DocLine], dest: Path) -> None:
     doc.close()
     log.info("Wrote exam PDF %s", dest)
 
+
+
+
+def _docx_set_keep_with_next(paragraph, value: bool) -> None:
+    paragraph.paragraph_format.keep_with_next = bool(value)
+
+
+def _docx_set_cell_shading(cell, fill: str = "E7E6E6") -> None:
+    tc_pr = cell._tc.get_or_add_tcPr()
+    shd = tc_pr.find(qn("w:shd"))
+    if shd is None:
+        shd = OxmlElement("w:shd")
+        tc_pr.append(shd)
+    shd.set(qn("w:fill"), fill)
+
+
+def _docx_set_run_font(run, font_name: str = "Noto Sans") -> None:
+    run.font.name = font_name
+    r_pr = run._element.get_or_add_rPr()
+    r_fonts = r_pr.rFonts
+    if r_fonts is None:
+        r_fonts = OxmlElement("w:rFonts")
+        r_pr.insert(0, r_fonts)
+    for attr in ("ascii", "hAnsi", "eastAsia", "cs"):
+        r_fonts.set(qn(f"w:{attr}"), font_name)
+
+
+def _docx_add_text(paragraph, text: str, *, size: float, bold: bool = False) -> None:
+    run = paragraph.add_run(text)
+    _docx_set_run_font(run)
+    run.font.size = Pt(size)
+    run.bold = bool(bold)
+
+
+def render_styled_docx(doc_lines: list[DocLine], dest: Path) -> None:
+    """Write a Word document from the same canonical DocLine stream used by PDF/TXT."""
+    dest = Path(dest)
+    dest.parent.mkdir(parents=True, exist_ok=True)
+
+    doc = Document()
+    section = doc.sections[0]
+    section.top_margin = Inches(0.75)
+    section.bottom_margin = Inches(0.75)
+    section.left_margin = Inches(0.75)
+    section.right_margin = Inches(0.75)
+
+    normal = doc.styles["Normal"]
+    normal.font.name = "Noto Sans"
+    normal.font.size = Pt(STYLES["body"]["size"])
+
+    for ln in doc_lines:
+        if ln.table:
+            rows = list(ln.table.get("rows") or [])
+            headers = list(ln.table.get("headers") or ["Column A", "Column B"])
+            table = doc.add_table(rows=1, cols=max(2, len(headers)))
+            table.style = "Table Grid"
+            table.alignment = WD_TABLE_ALIGNMENT.CENTER
+            table.autofit = True
+            hdr = table.rows[0].cells
+            for idx, text in enumerate(headers[: len(hdr)]):
+                hdr[idx].text = ""
+                hdr[idx].vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
+                p = hdr[idx].paragraphs[0]
+                p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+                _docx_add_text(p, str(text), size=11.0, bold=True)
+                _docx_set_cell_shading(hdr[idx])
+            for row in rows:
+                cells = table.add_row().cells
+                values = list(row) if isinstance(row, (list, tuple)) else [str(row)]
+                for idx, cell in enumerate(cells):
+                    cell.text = ""
+                    cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
+                    p = cell.paragraphs[0]
+                    value = values[idx] if idx < len(values) else ""
+                    _docx_add_text(p, str(value), size=10.5, bold=False)
+            tail = doc.add_paragraph()
+            tail.paragraph_format.space_after = Pt(max(ln.space_after, 2.0))
+            continue
+
+        p = doc.add_paragraph()
+        fmt = p.paragraph_format
+        fmt.left_indent = Pt(max(ln.indent, 0.0)) if ln.indent else None
+        fmt.space_before = Pt(max(ln.space_before, 0.0))
+        fmt.space_after = Pt(max(ln.space_after, 0.0))
+        fmt.line_spacing = STYLES.get(ln.style, STYLES["body"]).get("leading", 1.15)
+        _docx_set_keep_with_next(p, ln.keep_with_next)
+
+        if ln.center or ln.style in {"school", "title"}:
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        else:
+            p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+
+        if ln.image_path:
+            image = Path(ln.image_path)
+            if image.exists():
+                run = p.add_run()
+                height = Inches((ln.image_height or 168.0) / 72.0)
+                run.add_picture(str(image), height=height)
+            else:
+                _docx_add_text(p, "[Picture]", size=STYLES["body"]["size"], bold=False)
+            continue
+
+        style = STYLES.get(ln.style, STYLES["body"])
+        _docx_add_text(
+            p,
+            ln.text or "",
+            size=float(style.get("size", STYLES["body"]["size"])),
+            bold=bool(style.get("bold", False)),
+        )
+
+    doc.save(dest)
+    log.info("Wrote exam DOCX %s", dest)
+
+
+def render_exam_docx(exam: dict, dest: Path) -> None:
+    """Write the student exam Word document using the same content/order as PDF/TXT."""
+    render_styled_docx(build_exam_document(exam), dest)
 
 def _plain_text_document(text: str) -> list[DocLine]:
     lines: list[DocLine] = []

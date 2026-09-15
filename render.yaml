@@ -24,7 +24,7 @@ services:
         value: v25.0
 
       # PostgreSQL stores teacher lookup, WhatsApp sessions/dedupe,
-      # exam metadata, generated JSON/text, and both PDFs.
+      # exam metadata, generated JSON/text, exam PDF/Word, and answer-key PDF.
       - key: DATABASE_URL
         sync: false
       - key: DATABASE_AUTO_CREATE_TABLES

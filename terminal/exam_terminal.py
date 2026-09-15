@@ -260,7 +260,7 @@ def save_last() -> None:
         print("Nothing to save. Generate an exam first (option 8 already saves).")
         return
     print(f"Already saved at: {last['output_dir']}")
-    print("Files: exam.json, exam.txt, exam.pdf, answer_key.txt, answer_key.pdf, validation_report.txt, blueprint.json")
+    print("Files: exam.json, exam.txt, exam.pdf, exam.docx, answer_key.txt, answer_key.pdf, validation_report.txt, blueprint.json")
 
 
 def menu() -> None:
