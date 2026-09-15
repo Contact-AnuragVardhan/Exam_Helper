@@ -675,7 +675,7 @@ class WhatsAppAdapter:
         profile = wf.get_teacher_profile()
         name = cfg.teacher_name or getattr(profile, "teacher_name", "Teacher")
         text = (
-            "TEACHER EXAM\n"
+            "TEACHER EXAM(Release 1)\n"
             "\n"
             f"Welcome, {name}\n"
             "\n"
