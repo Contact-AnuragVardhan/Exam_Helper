@@ -4,7 +4,7 @@ import re
 from pathlib import Path
 
 from .logger import get_logger
-from .paths import source_path
+from .paths import book_data_dir, source_path
 
 
 log = get_logger("english_syllabus")
@@ -124,10 +124,26 @@ def parse_english_syllabus_text(text: str) -> dict:
             missing.append(book)
             continue
         try:
-            p = source_path(key)
+            source: Path | None = source_path(key)
         except Exception:
-            p = Path()
-        if not p.exists():
+            source = None
+
+        # Render/WhatsApp uses the pre-generated JSON book index at runtime.
+        # The original PDF is only required when rebuilding that index. Treat the
+        # deployed First Flight index as available so a deliberately omitted source
+        # PDF does not disable English chapter selection or literature generation.
+        indexed = False
+        if book == "First Flight":
+            data_dir = book_data_dir("english")
+            required = (
+                data_dir / "book.json",
+                data_dir / "chapters.json",
+                data_dir / "topics.json",
+                data_dir / "book_questions.json",
+            )
+            indexed = all(x.is_file() and x.stat().st_size > 0 for x in required)
+
+        if not (source and source.exists()) and not indexed:
             missing.append(book)
 
     return {

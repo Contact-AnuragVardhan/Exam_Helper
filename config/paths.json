@@ -5,7 +5,7 @@
   "q1_syllabus_txt": "../Rev 2 Step 1 Contents/10 Math Syllabus Q1 Exam.txt",
   "english_book_pdf": "../Rev 2 Step 1 Contents/10-English-FirstFlight.pdf",
   "english_book_configuration": "../Rev 2 Step 1 Contents/10 English  Book Configuration.txt",
-  "english_q1_syllabus_txt": "../Rev 2 Step 1 Contents/10 English Syllabus Q1 Exam.txt",
+  "english_q1_syllabus_txt": "config/syllabus/grade10_english_q1.txt",
   "english_sample_exam_docx": "../Rev 2 Step 1 Contents/10th English 2026 QE.docx",
   "mpbse_marking_docx": "../Rev 2 Step 1 Contents/MPBSE_2025-26 Exam Marking and Question FORMAT.docx",
   "mpbse_translation_docx": "../MPBSE_2025-26_Exam_Pattern_Grades_9-12_English_Translation.docx",
