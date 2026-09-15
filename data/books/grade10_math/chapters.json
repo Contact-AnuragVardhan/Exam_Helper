@@ -1,0 +1,535 @@
+{
+  "chapters": [
+    {
+      "chapter_id": "ch01",
+      "chapter_number": 1,
+      "chapter_name": "Real Numbers",
+      "start_page": 1,
+      "end_page": 9,
+      "topics": [
+        "ch01_s1",
+        "ch01_s2",
+        "ch01_s3",
+        "ch01_s4"
+      ],
+      "exercises": [
+        "ch01_ex1_1",
+        "ch01_ex1_2"
+      ]
+    },
+    {
+      "chapter_id": "ch02",
+      "chapter_number": 2,
+      "chapter_name": "Polynomials",
+      "start_page": 10,
+      "end_page": 23,
+      "topics": [
+        "ch02_s1",
+        "ch02_s2",
+        "ch02_s3",
+        "ch02_s4"
+      ],
+      "exercises": [
+        "ch02_ex2_1",
+        "ch02_ex2_2"
+      ]
+    },
+    {
+      "chapter_id": "ch03",
+      "chapter_number": 3,
+      "chapter_name": "Pair of Linear Equations in Two Variables",
+      "start_page": 24,
+      "end_page": 37,
+      "topics": [
+        "ch03_s1",
+        "ch03_s2",
+        "ch03_s3",
+        "ch03_s4"
+      ],
+      "exercises": [
+        "ch03_ex3_1",
+        "ch03_ex3_2",
+        "ch03_ex3_3"
+      ]
+    },
+    {
+      "chapter_id": "ch04",
+      "chapter_number": 4,
+      "chapter_name": "Quadratic Equations",
+      "start_page": 38,
+      "end_page": 48,
+      "topics": [
+        "ch04_s1",
+        "ch04_s2",
+        "ch04_s3",
+        "ch04_s4",
+        "ch04_s5"
+      ],
+      "exercises": [
+        "ch04_ex4_1",
+        "ch04_ex4_2",
+        "ch04_ex4_3"
+      ]
+    },
+    {
+      "chapter_id": "ch05",
+      "chapter_number": 5,
+      "chapter_name": "Arithmetic Progressions",
+      "start_page": 49,
+      "end_page": 72,
+      "topics": [
+        "ch05_s1",
+        "ch05_s2",
+        "ch05_s3",
+        "ch05_s4",
+        "ch05_s5"
+      ],
+      "exercises": [
+        "ch05_ex5_1",
+        "ch05_ex5_2",
+        "ch05_ex5_3",
+        "ch05_ex5_4"
+      ]
+    },
+    {
+      "chapter_id": "ch06",
+      "chapter_number": 6,
+      "chapter_name": "Triangles",
+      "start_page": 73,
+      "end_page": 98,
+      "topics": [
+        "ch06_s1",
+        "ch06_s2",
+        "ch06_s3",
+        "ch06_s4",
+        "ch06_s5"
+      ],
+      "exercises": [
+        "ch06_ex6_1",
+        "ch06_ex6_2",
+        "ch06_ex6_3"
+      ]
+    },
+    {
+      "chapter_id": "ch07",
+      "chapter_number": 7,
+      "chapter_name": "Coordinate Geometry",
+      "start_page": 99,
+      "end_page": 112,
+      "topics": [
+        "ch07_s1",
+        "ch07_s2",
+        "ch07_s3",
+        "ch07_s4"
+      ],
+      "exercises": [
+        "ch07_ex7_1",
+        "ch07_ex7_2"
+      ]
+    },
+    {
+      "chapter_id": "ch08",
+      "chapter_number": 8,
+      "chapter_name": "Introduction to Trigonometry",
+      "start_page": 113,
+      "end_page": 132,
+      "topics": [
+        "ch08_s1",
+        "ch08_s2",
+        "ch08_s3",
+        "ch08_s4",
+        "ch08_s5"
+      ],
+      "exercises": [
+        "ch08_ex8_1",
+        "ch08_ex8_2",
+        "ch08_ex8_3"
+      ]
+    },
+    {
+      "chapter_id": "ch09",
+      "chapter_number": 9,
+      "chapter_name": "Some Applications of Trigonometry",
+      "start_page": 133,
+      "end_page": 143,
+      "topics": [
+        "ch09_s1",
+        "ch09_s2"
+      ],
+      "exercises": [
+        "ch09_ex9_1"
+      ]
+    },
+    {
+      "chapter_id": "ch10",
+      "chapter_number": 10,
+      "chapter_name": "Circles",
+      "start_page": 144,
+      "end_page": 153,
+      "topics": [
+        "ch10_s1",
+        "ch10_s2",
+        "ch10_s3",
+        "ch10_s4"
+      ],
+      "exercises": [
+        "ch10_ex10_1",
+        "ch10_ex10_2"
+      ]
+    },
+    {
+      "chapter_id": "ch11",
+      "chapter_number": 11,
+      "chapter_name": "Areas Related to Circles",
+      "start_page": 154,
+      "end_page": 160,
+      "topics": [
+        "ch11_s1",
+        "ch11_s2"
+      ],
+      "exercises": [
+        "ch11_ex11_1"
+      ]
+    },
+    {
+      "chapter_id": "ch12",
+      "chapter_number": 12,
+      "chapter_name": "Surface Areas and Volumes",
+      "start_page": 161,
+      "end_page": 170,
+      "topics": [
+        "ch12_s1",
+        "ch12_s2",
+        "ch12_s3",
+        "ch12_s4"
+      ],
+      "exercises": [
+        "ch12_ex12_1",
+        "ch12_ex12_2"
+      ]
+    },
+    {
+      "chapter_id": "ch13",
+      "chapter_number": 13,
+      "chapter_name": "Statistics",
+      "start_page": 171,
+      "end_page": 201,
+      "topics": [
+        "ch13_s1",
+        "ch13_s2",
+        "ch13_s3",
+        "ch13_s4",
+        "ch13_s5"
+      ],
+      "exercises": [
+        "ch13_ex13_1",
+        "ch13_ex13_2",
+        "ch13_ex13_3"
+      ]
+    },
+    {
+      "chapter_id": "ch14",
+      "chapter_number": 14,
+      "chapter_name": "Probability",
+      "start_page": 202,
+      "end_page": 217,
+      "topics": [
+        "ch14_s1",
+        "ch14_s2"
+      ],
+      "exercises": [
+        "ch14_ex14_1"
+      ]
+    }
+  ],
+  "exercises": [
+    {
+      "exercise_id": "ch01_ex1_1",
+      "chapter_id": "ch01",
+      "exercise_number": "1.1",
+      "source_page": 5,
+      "optional": false,
+      "question_count": 15,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch01_ex1_2",
+      "chapter_id": "ch01",
+      "exercise_number": "1.2",
+      "source_page": 9,
+      "optional": false,
+      "question_count": 5,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch02_ex2_1",
+      "chapter_id": "ch02",
+      "exercise_number": "2.1",
+      "source_page": 18,
+      "optional": false,
+      "question_count": 3,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch02_ex2_2",
+      "chapter_id": "ch02",
+      "exercise_number": "2.2",
+      "source_page": 23,
+      "optional": false,
+      "question_count": 12,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch03_ex3_1",
+      "chapter_id": "ch03",
+      "exercise_number": "3.1",
+      "source_page": 28,
+      "optional": false,
+      "question_count": 19,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch03_ex3_2",
+      "chapter_id": "ch03",
+      "exercise_number": "3.2",
+      "source_page": 33,
+      "optional": false,
+      "question_count": 14,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch03_ex3_3",
+      "chapter_id": "ch03",
+      "exercise_number": "3.3",
+      "source_page": 36,
+      "optional": false,
+      "question_count": 9,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch04_ex4_1",
+      "chapter_id": "ch04",
+      "exercise_number": "4.1",
+      "source_page": 41,
+      "optional": false,
+      "question_count": 12,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch04_ex4_2",
+      "chapter_id": "ch04",
+      "exercise_number": "4.2",
+      "source_page": 44,
+      "optional": false,
+      "question_count": 10,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch04_ex4_3",
+      "chapter_id": "ch04",
+      "exercise_number": "4.3",
+      "source_page": 47,
+      "optional": false,
+      "question_count": 8,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch05_ex5_1",
+      "chapter_id": "ch05",
+      "exercise_number": "5.1",
+      "source_page": 55,
+      "optional": false,
+      "question_count": 26,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch05_ex5_2",
+      "chapter_id": "ch05",
+      "exercise_number": "5.2",
+      "source_page": 61,
+      "optional": false,
+      "question_count": 30,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch05_ex5_3",
+      "chapter_id": "ch05",
+      "exercise_number": "5.3",
+      "source_page": 68,
+      "optional": false,
+      "question_count": 35,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch05_ex5_4",
+      "chapter_id": "ch05",
+      "exercise_number": "5.4",
+      "source_page": 71,
+      "optional": true,
+      "question_count": 5,
+      "examinable": false
+    },
+    {
+      "exercise_id": "ch06_ex6_1",
+      "chapter_id": "ch06",
+      "exercise_number": "6.1",
+      "source_page": 78,
+      "optional": false,
+      "question_count": 7,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch06_ex6_2",
+      "chapter_id": "ch06",
+      "exercise_number": "6.2",
+      "source_page": 84,
+      "optional": false,
+      "question_count": 15,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch06_ex6_3",
+      "chapter_id": "ch06",
+      "exercise_number": "6.3",
+      "source_page": 74,
+      "optional": false,
+      "question_count": 22,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch07_ex7_1",
+      "chapter_id": "ch07",
+      "exercise_number": "7.1",
+      "source_page": 105,
+      "optional": false,
+      "question_count": 14,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch07_ex7_2",
+      "chapter_id": "ch07",
+      "exercise_number": "7.2",
+      "source_page": 111,
+      "optional": false,
+      "question_count": 10,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch08_ex8_1",
+      "chapter_id": "ch08",
+      "exercise_number": "8.1",
+      "source_page": 121,
+      "optional": false,
+      "question_count": 18,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch08_ex8_2",
+      "chapter_id": "ch08",
+      "exercise_number": "8.2",
+      "source_page": 127,
+      "optional": false,
+      "question_count": 15,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch08_ex8_3",
+      "chapter_id": "ch08",
+      "exercise_number": "8.3",
+      "source_page": 131,
+      "optional": false,
+      "question_count": 16,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch09_ex9_1",
+      "chapter_id": "ch09",
+      "exercise_number": "9.1",
+      "source_page": 141,
+      "optional": false,
+      "question_count": 15,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch10_ex10_1",
+      "chapter_id": "ch10",
+      "exercise_number": "10.1",
+      "source_page": 147,
+      "optional": false,
+      "question_count": 7,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch10_ex10_2",
+      "chapter_id": "ch10",
+      "exercise_number": "10.2",
+      "source_page": 151,
+      "optional": false,
+      "question_count": 13,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch11_ex11_1",
+      "chapter_id": "ch11",
+      "exercise_number": "11.1",
+      "source_page": 158,
+      "optional": false,
+      "question_count": 19,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch12_ex12_1",
+      "chapter_id": "ch12",
+      "exercise_number": "12.1",
+      "source_page": 166,
+      "optional": false,
+      "question_count": 9,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch12_ex12_2",
+      "chapter_id": "ch12",
+      "exercise_number": "12.2",
+      "source_page": 169,
+      "optional": false,
+      "question_count": 7,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch13_ex13_1",
+      "chapter_id": "ch13",
+      "exercise_number": "13.1",
+      "source_page": 181,
+      "optional": false,
+      "question_count": 9,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch13_ex13_2",
+      "chapter_id": "ch13",
+      "exercise_number": "13.2",
+      "source_page": 186,
+      "optional": false,
+      "question_count": 6,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch13_ex13_3",
+      "chapter_id": "ch13",
+      "exercise_number": "13.3",
+      "source_page": 198,
+      "optional": false,
+      "question_count": 7,
+      "examinable": true
+    },
+    {
+      "exercise_id": "ch14_ex14_1",
+      "chapter_id": "ch14",
+      "exercise_number": "14.1",
+      "source_page": 214,
+      "optional": false,
+      "question_count": 57,
+      "examinable": true
+    }
+  ]
+}

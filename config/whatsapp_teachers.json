@@ -1,0 +1,14 @@
+{
+  "teachers": [
+    {
+      "wa_id": "15550001001",
+      "teacher_id": "T001",
+      "note": "Mock/demo teacher. Replace wa_id with the real WhatsApp sender number (digits only)."
+    },
+    {
+      "wa_id": "15550001002",
+      "teacher_id": "T001",
+      "note": "Second mock number for session-isolation tests. Same teacher profile."
+    }
+  ]
+}

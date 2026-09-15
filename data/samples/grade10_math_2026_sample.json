@@ -1,0 +1,26 @@
+{
+  "sample_exam_id": "grade10_math_2026_sample_qe",
+  "title": "10th Math 2026 Sample Exam",
+  "source_file": "G:\\My Drive\\Docs\\Jalta Sitara\\Exam Prep Rev 2\\Rev 2 Step 1 Contents\\10th Math 2026 Sample Exam.docx",
+  "status": "READY",
+  "grade": 10,
+  "subject": "Mathematics",
+  "stated_marks": 75,
+  "stated_duration": "3 hours",
+  "coverage_note": "Chapters listed on the paper: Real Numbers, Polynomials, Pair of Linear Equations in Two Variables, Quadratic Equations.",
+  "style_role": "STYLE/EXAMPLE evidence only. Not higher authority than explicit MPBSE rules.",
+  "observed_structure": {
+    "Q1_Q5_objective": true,
+    "Q6_Q17_2mark": true,
+    "Q18_Q20_3mark": true,
+    "Q21_plus_4mark": true,
+    "extra_long_items_q24_q25": true,
+    "internal_choice_note": "Long-answer heading says 'कोई 3' (any 3). Not stored as an official MPBSE Class 10 Math rule."
+  },
+  "header_language_in_sample": "hi",
+  "body_language_in_sample": "hi",
+  "warnings": [
+    "Sample paper includes Q24 and Q25 beyond the Q21-Q23 pattern used in the Exam Profile.",
+    "Some option/formula glyphs did not extract cleanly from the DOCX; used as style evidence only."
+  ]
+}

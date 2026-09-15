@@ -1,0 +1,110 @@
+{
+  "subject": "English",
+  "grade": 10,
+  "formats": [
+    {
+      "format_id": "UNSEEN_PASSAGE_MCQ",
+      "format_name": "Unseen passage with objective questions",
+      "marks": 1,
+      "content_class": "READING",
+      "student_task": "Read the unseen passage and choose the correct option.",
+      "generation_rules": {"options": 4, "language": "en"}
+    },
+    {
+      "format_id": "NOTE_MAKING",
+      "format_name": "Note-making",
+      "marks": 4,
+      "content_class": "READING",
+      "student_task": "Read the passage and make suitable notes.",
+      "generation_rules": {"language": "en"}
+    },
+    {
+      "format_id": "APPLICATION_OR_LETTER",
+      "format_name": "Application or letter",
+      "marks": 4,
+      "content_class": "WRITING",
+      "student_task": "Write one of the two given letters/applications.",
+      "generation_rules": {"internal_or": true, "language": "en"}
+    },
+    {
+      "format_id": "ESSAY",
+      "format_name": "Essay (any one)",
+      "marks": 5,
+      "content_class": "WRITING",
+      "student_task": "Write an essay on any one of the given topics.",
+      "generation_rules": {"any_one_of": 4, "language": "en"}
+    },
+    {
+      "format_id": "PICTURE_COMPOSITION",
+      "format_name": "Picture-based writing",
+      "marks": 4,
+      "content_class": "WRITING",
+      "student_task": "Describe the given picture/scene in about 60-75 words.",
+      "generation_rules": {"word_limit": "60-75", "language": "en"}
+    },
+    {
+      "format_id": "GRAMMAR_FILL_BLANK",
+      "format_name": "Grammar fill in the blanks",
+      "marks": 1,
+      "content_class": "GRAMMAR",
+      "student_task": "Fill in the blanks choosing the correct option (attempt any 5).",
+      "generation_rules": {"language": "en"}
+    },
+    {
+      "format_id": "DO_AS_DIRECTED",
+      "format_name": "Do as directed / sentence transformation",
+      "marks": 1,
+      "content_class": "GRAMMAR",
+      "student_task": "Rewrite as directed (attempt any 5).",
+      "generation_rules": {"language": "en"}
+    },
+    {
+      "format_id": "LITERATURE_EXTRACT_MCQ",
+      "format_name": "Textbook extract with objective questions",
+      "marks": 1,
+      "content_class": "LITERATURE",
+      "student_task": "Read the extract and answer the questions.",
+      "generation_rules": {"options": 3, "language": "en"}
+    },
+    {
+      "format_id": "LITERATURE_MCQ",
+      "format_name": "Literature objective/MCQ",
+      "marks": 1,
+      "content_class": "LITERATURE",
+      "student_task": "Choose the correct answer from the allowed First Flight texts.",
+      "generation_rules": {"options": 4, "language": "en"}
+    },
+    {
+      "format_id": "LITERATURE_SA_2",
+      "format_name": "Short-answer literature (2 marks)",
+      "marks": 2,
+      "content_class": "LITERATURE",
+      "student_task": "Answer in a few sentences from the allowed textbook.",
+      "generation_rules": {"language": "en"}
+    },
+    {
+      "format_id": "LITERATURE_POEM_SA",
+      "format_name": "Poetry short answer",
+      "marks": 3,
+      "content_class": "LITERATURE",
+      "student_task": "Answer from the allowed poems only.",
+      "generation_rules": {"language": "en"}
+    },
+    {
+      "format_id": "LITERATURE_SA_3",
+      "format_name": "Literature short answer (3 marks)",
+      "marks": 3,
+      "content_class": "LITERATURE",
+      "student_task": "Answer from the allowed prose/poems only.",
+      "generation_rules": {"language": "en"}
+    },
+    {
+      "format_id": "LITERATURE_LA_3",
+      "format_name": "Longer literature answer with internal OR",
+      "marks": 3,
+      "content_class": "LITERATURE",
+      "student_task": "Answer one of the two literature questions.",
+      "generation_rules": {"internal_or": true, "language": "en"}
+    }
+  ]
+}

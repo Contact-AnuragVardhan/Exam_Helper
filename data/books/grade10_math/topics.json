@@ -1,0 +1,499 @@
+{
+  "topics": [
+    {
+      "topic_id": "ch01_s1",
+      "chapter_id": "ch01",
+      "section_number": "1.1",
+      "topic_name": "Introduction",
+      "start_page": 1,
+      "end_page": 1,
+      "source_excerpt": "1.1 Introduction In Class IX, you began your exploration of the world of real numbers and encountered irrational numbers. We continue our discussion on real numbers in this chapter. We begin with very important properties of positive integers in Sections 1.2, namely the Euclid’s division algorithm and the Fundamental Theorem of Arithmetic. Euclid’s division algorithm, as the name suggests, has to do with divisibility of integers. Stated simply, it says any positive integer a can be divided by another positive integer b in such a way that it leaves a remainder r that is smaller than b. Many of you probably recognise this as the usual long division process. Although this result is quite easy to state and understand, it has many applications related to the divisibility properties of integers. We touch upon a few of them, and use it mainly to compute the HCF of two positive integers. The Fundamental Theorem of Arithmetic, on the other hand, has to do something with multiplication of positive integers. You already know that every composite number can be expressed as a product of primes in a unique way—this important fact is the Fundamental Theorem of Arithmetic. Again, while it is a result that is easy to state and understand, it has some very deep and significant applications in the field of mathematics. We use the Fundamental Theorem of Arithmetic for two main applications. First, we use it to prove the irrationality of many of the numbers you studied in Class IX, such as 2, 3 and 5 . Second, we apply this theorem to explore when exactly the decimal expansion of a rational number, say ( 0) p q q  , is terminating and when it is non- terminating repeating. We do so by looking at the prime factorisation of the denominator q of p q . You will see that the prime factorisation"
+    },
+    {
+      "topic_id": "ch01_s2",
+      "chapter_id": "ch01",
+      "section_number": "1.2",
+      "topic_name": "The Fundamental Theorem of Arithmetic",
+      "start_page": 2,
+      "end_page": 5,
+      "source_excerpt": "1.2 The Fundamental Theorem of Arithmetic In your earlier classes, you have seen that any natural number can be written as a product of its prime factors. For instance, 2 = 2, 4 = 2 × 2, 253 = 11 × 23, and so on. Now, let us try and look at natural numbers from the other direction. That is, can any natural number be obtained by multiplying prime numbers? Let us see. Take any collection of prime numbers, say 2, 3, 7, 11 and 23. If we multiply some or all of these numbers, allowing them to repeat as many times as we wish, we can produce a large collection of positive integers (In fact, infinitely many). Let us list a few : 7 × 11 × 23 = 1771 3 × 7 × 11 × 23 = 5313 2 × 3 × 7 × 11 × 23 = 10626 23 × 3 × 73 = 8232 22 × 3 × 7 × 11 × 23 = 21252 and so on. Now, let us suppose your collection of primes includes all the possible primes. What is your guess about the size of this collection? Does it contain only a finite number of integers, or infinitely many? Infact, there are infinitely many primes. So, if we combine all these primes in all possible ways, we will get an infinite collection of numbers, all the primes and all possible products of primes. The question is – can we produce all the composite numbers this way? What do you think? Do you think that there may be a composite number which is not the product of powers of primes? Before we answer this, let us factorise positive integers, that is, do the opposite of what we have done so far. We are going to use the factor tree with which you are all familiar. Let us take some large number, say, 32760, and factorise it as shown. Carl Friedrich Gauss (1777 – 1855) An equivalent version of Theorem 1.2 was probably first recorded as Proposition 14 of Book IX in Euclid’s Elements, before it came to be known as the Fundamental Theorem"
+    },
+    {
+      "topic_id": "ch01_s3",
+      "chapter_id": "ch01",
+      "section_number": "1.3",
+      "topic_name": "Revisiting Irrational Numbers",
+      "start_page": 6,
+      "end_page": 8,
+      "source_excerpt": "same point and at the same time, and go in the same direction. After how many minutes will they meet again at the starting point? 1.3 Revisiting Irrational Numbers In Class IX, you were introduced to irrational numbers and many of their properties. You studied about their existence and how the rationals and the irrationals together made up the real numbers. You even studied how to locate irrationals on the number line. However, we did not prove that they were irrationals. In this section, we will prove that 2 , 3 , 5 and, in general, p is irrational, where p is a prime. One of the theorems, we use in our proof, is the Fundamental Theorem of Arithmetic. Recall, a number ‘s’ is called irrational if it cannot be written in the form , p q where p and q are integers and q ¹ 0. Some examples of irrational numbers, with which you are already familiar, are : 2 , 2, 3, 15, , 0.10110111011110 . . .  , etc. Before we prove that 2 is irrational, we need the following theorem, whose proof is based on the Fundamental Theorem of Arithmetic. Theorem 1.2 : Let p be a prime number. If p divides a2, then p divides a, where a is a positive integer. *Proof : Let the prime factorisation of a be as follows : a = p1p2 . . . pn, where p1,p2, . . ., pn are primes, not necessarily distinct. Therefore, a2 = (p1p2 . . . pn)( p1p2 . . . pn) = p2 1p2 2 . . . p2 n. Now, we are given that p divides a2. Therefore, from the Fundamental Theorem of Arithmetic, it follows that p is one of the prime factors of a2. However, using the uniqueness part of the Fundamental Theorem of Arithmetic, we realise that the only prime factors of a2 are p1, p2, . . ., pn. So p is one of p1, p2, . . ., pn. Now, since a = p1 p2 . . . pn, p divides a. We are now ready to give a proof that 2 is irrational. The proof is based "
+    },
+    {
+      "topic_id": "ch01_s4",
+      "chapter_id": "ch01",
+      "section_number": "1.4",
+      "topic_name": "Summary",
+      "start_page": 9,
+      "end_page": 9,
+      "source_excerpt": "But this contradicts the fact that 2 is irrational. So, we conclude that 3 2 is irrational. EXERCISE 1.2 1. Prove that 5 is irrational. 2. Prove that 3 2 5  is irrational. 3. Prove that the following are irrationals : (i) (ii) 7 5 (iii) 6  1.4 Summary In this chapter, you have studied the following points: 1. The Fundamental Theorem of Arithmetic : Every composite number can be expressed (factorised) as a product of primes, and this factorisation is unique, apart from the order in which the prime factors occur. 2. If p is a prime and p divides a2, then p divides a, where a is a positive integer. 3. To prove that 2, 3 are irrationals. A NOTE TO THE READER You have seen that : HCF ( p, q, r) × LCM (p, q, r)  p × q × r, where p, q, r are positive integers (see Example 8). However, the following results hold good for three numbers p, q and r : LCM (p, q, r) = HCF( , , ) HCF( , ) HCF( , ) HCF( , ) p q r p q r p q q r p r    HCF (p, q, r) = LCM( , , ) LCM( , ) LCM( , ) LCM( , ) p q r p q r p q q r p r   "
+    },
+    {
+      "topic_id": "ch02_s1",
+      "chapter_id": "ch02",
+      "section_number": "2.1",
+      "topic_name": "Introduction",
+      "start_page": 10,
+      "end_page": 10,
+      "source_excerpt": "2.1 Introduction In Class IX, you have studied polynomials in one variable and their degrees. Recall that if p(x) is a polynomial in x, the highest power of x in p(x) is called the degree of the polynomial p(x). For example, 4x + 2 is a polynomial in the variable x of degree 1, 2y2 – 3y + 4 is a polynomial in the variable y of degree 2, 5x3 – 4x2 + x – is a polynomial in the variable x of degree 3 and 7u6 – 2u u u    is a polynomial in the variable u of degree 6. Expressions like x  , x  , x x   etc., are not polynomials. A polynomial of degree 1 is called a linear polynomial. For example, 2x – 3, 5, x  y , x  , 3z + 4, 2 3u , etc., are all linear polynomials. Polynomials such as 2x + 5 – x2, x3 + 1, etc., are not linear polynomials. A polynomial of degree 2 is called a quadratic polynomial. The name ‘quadratic’ has been derived from the word ‘quadrate’, which means ‘square’. 2, x x   y2 – 2, 3 , x x   5, , 4 u u v v z     are some examples of quadratic polynomials (whose coefficients are real numbers). More generally, any quadratic polynomial in x is of the form ax2 + bx + c, where a, b, c are real numbers and a  0. A polynomial of degree 3 is called a cubic polynomial. Some examples of"
+    },
+    {
+      "topic_id": "ch02_s2",
+      "chapter_id": "ch02",
+      "section_number": "2.2",
+      "topic_name": "Geometrical Meaning of the Zeroes of a Polynomial",
+      "start_page": 11,
+      "end_page": 17,
+      "source_excerpt": "a cubic polynomial are 2 – x3, x3, , x 3 – x2 + x3, 3x3 – 2x2 + x – 1. In fact, the most general form of a cubic polynomial is ax3 + bx2 + cx + d, where, a, b, c, d are real numbers and a  0. Now consider the polynomial p(x) = x2 – 3x – 4. Then, putting x = 2 in the polynomial, we get p(2) = 22 – 3 × 2 – 4 = – 6. The value ‘– 6’, obtained by replacing x by 2 in x2 – 3x – 4, is the value of x2 – 3x – 4 at x = 2. Similarly, p(0) is the value of p(x) at x = 0, which is – 4. If p(x) is a polynomial in x, and if k is any real number, then the value obtained by replacing x by k in p(x), is called the value of p(x) at x = k, and is denoted by p(k). What is the value of p(x) = x2 –3x – 4 at x = –1? We have : p(–1) = (–1)2 –{3 × (–1)} – 4 = 0 Also, note that p(4) = 42 – (3  4) – 4 = 0. As p(–1) = 0 and p(4) = 0, –1 and 4 are called the zeroes of the quadratic polynomial x2 – 3x – 4. More generally, a real number k is said to be a zero of a polynomial p(x), if p(k) = 0. You have already studied in Class IX, how to find the zeroes of a linear polynomial. For example, if k is a zero of p(x) = 2x + 3, then p(k) = 0 gives us 2k + 3 = 0, i.e., k =   In general, if k is a zero of p(x) = ax + b, then p(k) = ak + b = 0, i.e., b k a    So, the zero of the linear polynomial ax + b is (Constant term) Coefficient of b a x    . Thus, the zero of a linear polynomial is related to its coefficients. Does this happen in the case of other polynomials too? For example, are the zeroes of a quadratic polynomial also related to its coefficients? In this chapter, we will try to answer these questions. We will also study the division algorithm for polynomials. 2.2 Geometrical Meaning of the Zeroes of a Polynomial You know that a real number k is a zero of the polynomial p(x) if p(k) = 0. But w"
+    },
+    {
+      "topic_id": "ch02_s3",
+      "chapter_id": "ch02",
+      "section_number": "2.3",
+      "topic_name": "Relationship between Zeroes and Coefficients of a Polynomial",
+      "start_page": 18,
+      "end_page": 22,
+      "source_excerpt": "(iv) The number of zeroes is 1. (Why?) (v) The number of zeroes is 1. (Why?) (vi) The number of zeroes is 4. (Why?) EXERCISE 2.1 1. The graphs of y = p(x) are given in Fig. 2.10 below, for some polynomials p(x). Find the number of zeroes of p(x), in each case. 2.3 Relationship between Zeroes and Coefficients of a Polynomial You have already seen that zero of a linear polynomial ax + b is b a  . We will now try to answer the question raised in Section 2.1 regarding the relationship between zeroes and coefficients of a quadratic polynomial. For this, let us take a quadratic polynomial, say p(x) = 2x2 – 8x + 6. In Class IX, you have learnt how to factorise quadratic polynomials by splitting the middle term. So, here we need to split the middle term ‘– 8x’ as a sum of two terms, whose product is 6 × 2x2 = 12x2. So, we write 2x2 – 8x + 6 = 2x2 – 6x – 2x + 6 = 2x(x – 3) – 2(x – 3) = (2x – 2)(x – 3) = 2(x – 1)(x – 3) So, the value of p(x) = 2x2 – 8x + 6 is zero when x – 1 = 0 or x – 3 = 0, i.e., when x = 1 or x = 3. So, the zeroes of 2x2 – 8x + 6 are 1 and 3. Observe that : Sum of its zeroes = ( 8) (Coefficient of ) Coefficient of x x       Product of its zeroes = Constant term Coefficient of x     Let us take one more quadratic polynomial, say, p(x) = 3x2 + 5x – 2. By the method of splitting the middle term, 3x2 + 5x – 2 = 3x2 + 6x – x – 2 = 3x(x + 2) –1(x + 2) = (3x – 1)(x + 2) Hence, the value of 3x2 + 5x – 2 is zero when either 3x – 1 = 0 or x + 2 = 0, i.e., when x = 1 3 or x = –2. So, the zeroes of 3x2 + 5x – 2 are 1 3 and – 2. Observe that : Sum of its zeroes = (Coefficient of ) ( 2) Coefficient of x x      Product of its zeroes = Constant term ( 2) Coefficient of x     In general, if * and * are the zeroes of the quadratic polynomial p(x) = ax2 "
+    },
+    {
+      "topic_id": "ch02_s4",
+      "chapter_id": "ch02",
+      "section_number": "2.4",
+      "topic_name": "Summary",
+      "start_page": 23,
+      "end_page": 23,
+      "source_excerpt": "EXERCISE 2.2 1. Find the zeroes of the following quadratic polynomials and verify the relationship between the zeroes and the coefficients. (i) x2 – 2x – 8 (ii) 4s2 – 4s + 1 (iii) 6x2 – 3 – 7x (iv) 4u2 + 8u (v) t2 – 15 (vi) 3x2 – x – 4 2. Find a quadratic polynomial each with the given numbers as the sum and product of its zeroes respectively. (i) 1 , 4  (ii) 2 , 3 (iii) 0, (iv) 1, 1 (v) ,  (vi) 4, 1 2.4 Summary In this chapter, you have studied the following points: 1. Polynomials of degrees 1, 2 and 3 are called linear, quadratic and cubic polynomials respectively. 2. A quadratic polynomial in x with real coefficients is of the form ax2 + bx + c, where a, b, c are real numbers with a  0. 3. The zeroes of a polynomial p(x) are precisely the x-coordinates of the points, where the graph of y = p(x) intersects the x-axis. 4. A quadratic polynomial can have at most 2 zeroes and a cubic polynomial can have at most 3 zeroes. 5. If  and  are the zeroes of the quadratic polynomial ax2 + bx + c, then b a  , c a  . 6. If , ,  are the zeroes of the cubic polynomial ax3 + bx2 + cx + d, then b a   , c a  , and d a   ."
+    },
+    {
+      "topic_id": "ch03_s1",
+      "chapter_id": "ch03",
+      "section_number": "3.1",
+      "topic_name": "Introduction",
+      "start_page": 24,
+      "end_page": 24,
+      "source_excerpt": "3.1 Introduction You must have come across situations like the one given below : Akhila went to a fair in her village. She wanted to enjoy rides on the Giant Wheel and play Hoopla (a game in which you throw a ring on the items kept in a stall, and if the ring covers any object completely, you get it). The number of times she played Hoopla is half the number of rides she had on the Giant Wheel. If each ride costs ` 3, and a game of Hoopla costs ` 4, how would you find out the number of rides she had and how many times she played Hoopla, provided she spent ` 20. May be you will try it by considering different cases. If she has one ride, is it possible? Is it possible to have two rides? And so on. Or you may use the knowledge of Class IX, to represent such situations as linear equations in two variables. PAIR OF LINEAR EQUATIONS IN TWO VARIABLES"
+    },
+    {
+      "topic_id": "ch03_s2",
+      "chapter_id": "ch03",
+      "section_number": "3.2",
+      "topic_name": "Graphical Method of Solution of a Pair of Linear Equations",
+      "start_page": 25,
+      "end_page": 29,
+      "source_excerpt": "Let us try this approach. Denote the number of rides that Akhila had by x, and the number of times she played Hoopla by y. Now the situation can be represented by the two equations: y = 1 2 x (1) 3x + 4y = 20 (2) Can we find the solutions of this pair of equations? There are several ways of finding these, which we will study in this chapter. 3.2 Graphical Method of Solution of a Pair of Linear Equations A pair of linear equations which has no solution, is called an inconsistent pair of linear equations. A pair of linear equations in two variables, which has a solution, is called a consistent pair of linear equations. A pair of linear equations which are equivalent has infinitely many distinct common solutions. Such a pair is called a dependent pair of linear equations in two variables. Note that a dependent pair of linear equations is always consistent. We can now summarise the behaviour of lines representing a pair of linear equations in two variables and the existence of solutions as follows: (i) the lines may intersect in a single point. In this case, the pair of equations has a unique solution (consistent pair of equations). (ii) the lines may be parallel. In this case, the equations have no solution (inconsistent pair of equations). (iii) the lines may be coincident. In this case, the equations have infinitely many solutions [dependent (consistent) pair of equations]. Consider the following three pairs of equations. (i) x – 2y = 0 and 3x + 4y – 20 = 0 (The lines intersect) (ii) 2x + 3y – 9 = 0 and 4x + 6y – 18 = 0 (The lines coincide) (iii) x + 2y – 4 = 0 and 2x + 4y – 12 = 0 (The lines are parallel) Let us now write down, and compare, the values of , and a b c c a b in all the three examples. Here, a1, b1, c1 and a2, b2, c2 denote the coefficents of equations give"
+    },
+    {
+      "topic_id": "ch03_s3",
+      "chapter_id": "ch03",
+      "section_number": "3.3",
+      "topic_name": "Algebraic Methods of Solving a Pair of Linear Equations",
+      "start_page": 30,
+      "end_page": 36,
+      "source_excerpt": "3.3 Algebraic Methods of Solving a Pair of Linear Equations In the previous section, we discussed how to solve a pair of linear equations graphically. The graphical method is not convenient in cases when the point representing the solution of the linear equations has non-integral coordinates like ( ) 3, 2 7 , (–1.75, 3.3), , 13 19      , etc. There is every possibility of making mistakes while reading such coordinates. Is there any alternative method of finding the solution? There are several algebraic methods, which we shall now discuss. 3.3.1 Substitution Method : We shall explain the method of substitution by taking some examples. Example 4 : Solve the following pair of equations by substitution method: 7x – 15y = 2 (1) x + 2y = 3 (2) Solution : Step 1 : We pick either of the equations and write one variable in terms of the other. Let us consider the Equation (2) : x + 2y = 3 and write it as x = 3 – 2y (3) Step 2 : Substitute the value of x in Equation (1). We get 7(3 – 2y) – 15y = 2 i.e., 21 – 14y – 15y = 2 i.e., – 29y = –19 Therefore, y = 19 Step 3 : Substituting this value of y in Equation (3), we get x = 3 – 2 29       = 49 Therefore, the solution is x = 49 29 , y = 19 29 . Verification : Substituting x = 49 29 and y = 19 29 , you can verify that both the Equations (1) and (2) are satisfied. To understand the substitution method more clearly, let us consider it stepwise: Step 1 : Find the value of one variable, say y in terms of the other variable, i.e., x from either equation, whichever is convenient. Step 2 : Substitute this value of y in the other equation, and reduce it to an equation in one variable, i.e., in terms of x, which can be solved. Sometimes, as in Examples 9 and 10 below, you can get statements with no variable. If this statement is tr"
+    },
+    {
+      "topic_id": "ch03_s4",
+      "chapter_id": "ch03",
+      "section_number": "3.4",
+      "topic_name": "Summary",
+      "start_page": 37,
+      "end_page": 37,
+      "source_excerpt": "(iv) Meena went to a bank to withdraw ` 2000. She asked the cashier to give her ` 50 and ` 100 notes only. Meena got 25 notes in all. Find how many notes of ` 50 and ` 100 she received. (v) A lending library has a fixed charge for the first three days and an additional charge for each day thereafter. Saritha paid ` 27 for a book kept for seven days, while Susy paid ` 21 for the book she kept for five days. Find the fixed charge and the charge for each extra day. 3.4 Summary In this chapter, you have studied the following points: 1. A pair of linear equations in two variables can be represented, and solved, by the: (i) graphical method (ii) algebraic method 2. Graphical Method : The graph of a pair of linear equations in two variables is represented by two lines. (i) If the lines intersect at a point, then that point gives the unique solution of the two equations. In this case, the pair of equations is consistent. (ii) If the lines coincide, then there are infinitely many solutions — each point on the line being a solution. In this case, the pair of equations is dependent (consistent). (iii) If the lines are parallel, then the pair of equations has no solution. In this case, the pair of equations is inconsistent. 3. Algebraic Methods : We have discussed the following methods for finding the solution(s) of a pair of linear equations : (i) Substitution Method (ii) Elimination Method 4. If a pair of linear equations is given by a1x + b1y + c1 = 0 and a2x + b2y + c2 = 0, then the following situations can arise : (i) a b a b  : In this case, the pair of linear equations is consistent. (ii) a b c a b c   : In this case, the pair of linear equations is inconsistent. (iii) a b c a b c   : In this case, the pair of linear equations is dependent and consistent. 5. There are s"
+    },
+    {
+      "topic_id": "ch04_s1",
+      "chapter_id": "ch04",
+      "section_number": "4.1",
+      "topic_name": "Introduction",
+      "start_page": 38,
+      "end_page": 38,
+      "source_excerpt": "4.1 Introduction In Chapter 2, you have studied different types of polynomials. One type was the quadratic polynomial of the form ax2 + bx + c, a  0. When we equate this polynomial to zero, we get a quadratic equation. Quadratic equations come up when we deal with many real-life situations. For instance, suppose a charity trust decides to build a prayer hall having a carpet area of 300 square metres with its length one metre more than twice its breadth. What should be the length and breadth of the hall? Suppose the breadth of the hall is x metres. Then, its length should be (2x + 1) metres. We can depict this information pictorially as shown in Fig. 4.1. Now, area of the hall = (2x + 1). x m2 = (2x2 + x) m2 So, 2x2 + x = 300 (Given) Therefore, 2x2 + x – 300 = 0 So, the breadth of the hall should satisfy the equation 2x2 + x – 300 = 0 which is a quadratic equation. Many people believe that Babylonians were the first to solve quadratic equations. For instance, they knew how to find two positive numbers with a given positive sum and a given positive product, and this problem is equivalent to solving a quadratic equation of the form x2 – px + q = 0. Greek mathematician Euclid developed a geometrical approach for finding out lengths which, in our present day terminology, are solutions of quadratic equations. Solving of quadratic equations, in general form, is often credited to ancient Indian mathematicians. In fact, Brahmagupta (C.E.598–665) gave an explicit formula to solve a quadratic equation of the form ax2 + bx = c. Later,"
+    },
+    {
+      "topic_id": "ch04_s2",
+      "chapter_id": "ch04",
+      "section_number": "4.2",
+      "topic_name": "Quadratic Equations",
+      "start_page": 39,
+      "end_page": 41,
+      "source_excerpt": "Sridharacharya (C.E. 1025) derived a formula, now known as the quadratic formula, (as quoted by Bhaskara II) for solving a quadratic equation by the method of completing the square. An Arab mathematician Al-Khwarizmi (about C.E. 800) also studied quadratic equations of different types. Abraham bar Hiyya Ha-Nasi, in his book ‘Liber embadorum’ published in Europe in C.E. 1145 gave complete solutions of different quadratic equations. In this chapter, you will study quadratic equations, and various ways of finding their roots. You will also see some applications of quadratic equations in daily life situations. 4.2 Quadratic Equations A quadratic equation in the variable x is an equation of the form ax2 + bx + c = 0, where a, b, c are real numbers, a  0. For example, 2x2 + x – 300 = 0 is a quadratic equation. Similarly, 2x2 – 3x + 1 = 0, 4x – 3x2 + 2 = 0 and 1 – x2 + 300 = 0 are also quadratic equations. In fact, any equation of the form p(x) = 0, where p(x) is a polynomial of degree 2, is a quadratic equation. But when we write the terms of p(x) in descending order of their degrees, then we get the standard form of the equation. That is, ax2 + bx + c = 0, a  0 is called the standard form of a quadratic equation. Quadratic equations arise in several situations in the world around us and in different fields of mathematics. Let us consider a few examples. Example 1 : Represent the following situations mathematically: (i) John and Jivanti together have 45 marbles. Both of them lost 5 marbles each, and the product of the number of marbles they now have is 124. We would like to find out how many marbles they had to start with. (ii) A cottage industry produces a certain number of toys in a day. The cost of production of each toy (in rupees) was found to be 55 minus the number of"
+    },
+    {
+      "topic_id": "ch04_s3",
+      "chapter_id": "ch04",
+      "section_number": "4.3",
+      "topic_name": "Solution of a Quadratic Equation by Factorisation",
+      "start_page": 42,
+      "end_page": 43,
+      "source_excerpt": "(ii) The product of two consecutive positive integers is 306. We need to find the integers. (iii) Rohan’s mother is 26 years older than him. The product of their ages (in years) 3 years from now will be 360. We would like to find Rohan’s present age. (iv) A train travels a distance of 480 km at a uniform speed. If the speed had been 8 km/h less, then it would have taken 3 hours more to cover the same distance. We need to find the speed of the train. 4.3 Solution of a Quadratic Equation by Factorisation Consider the quadratic equation 2x2 – 3x + 1 = 0. If we replace x by 1 on the LHS of this equation, we get (2 × 12) – (3 × 1) + 1 = 0 = RHS of the equation. We say that 1 is a root of the quadratic equation 2x2 – 3x + 1 = 0. This also means that 1 is a zero of the quadratic polynomial 2x2 – 3x + 1. In general, a real number  is called a root of the quadratic equation ax2 + bx + c = 0, a  0 if a 2 + b + c = 0. We also say that x =  is a solution of the quadratic equation, or that  satisfies the quadratic equation. Note that the zeroes of the quadratic polynomial ax2 + bx + c and the roots of the quadratic equation ax2 + bx + c = 0 are the same. You have observed, in Chapter 2, that a quadratic polynomial can have at most two zeroes. So, any quadratic equation can have atmost two roots. You have learnt in Class IX, how to factorise quadratic polynomials by splitting their middle terms. We shall use this knowledge for finding the roots of a quadratic equation. Let us see how. Example 3 : Find the roots of the equation 2x2 – 5x + 3 = 0, by factorisation. Solution : Let us first split the middle term – 5x as –2x –3x [because (–2x) × (–3x) = 6x2 = (2x2) × 3]. So, 2x2 – 5x + 3 = 2x2 – 2x – 3x + 3 = 2x (x – 1) –3(x – 1) = (2x – 3)(x – 1) Now, 2x2 – 5x + 3 = 0 can be rewritt"
+    },
+    {
+      "topic_id": "ch04_s4",
+      "chapter_id": "ch04",
+      "section_number": "4.4",
+      "topic_name": "Nature of Roots",
+      "start_page": 44,
+      "end_page": 46,
+      "source_excerpt": "Example 6 : Find the dimensions of the prayer hall discussed in Section 4.1. Solution : In Section 4.1, we found that if the breadth of the hall is x m, then x satisfies the equation 2x2 + x – 300 = 0. Applying the factorisation method, we write this equation as 2x2 – 24x + 25x – 300 = 0 2x (x – 12) + 25 (x – 12) = 0 i.e., (x – 12)(2x + 25) = 0 So, the roots of the given equation are x = 12 or x = – 12.5. Since x is the breadth of the hall, it cannot be negative. Thus, the breadth of the hall is 12 m. Its length = 2x + 1 = 25 m. EXERCISE 4.2 1. Find the roots of the following quadratic equations by factorisation: (i) x2 – 3x – 10 = 0 (ii) 2x2 + x – 6 = 0 (iii) 5 2 x x    (iv) 2x2 – x + 8 = 0 (v) 100x2 – 20x + 1 = 0 2. Solve the problems given in Example 1. 3. Find two numbers whose sum is 27 and product is 182. 4. Find two consecutive positive integers, sum of whose squares is 365. 5. The altitude of a right triangle is 7 cm less than its base. If the hypotenuse is 13 cm, find the other two sides. 6. A cottage industry produces a certain number of pottery articles in a day. It was observed on a particular day that the cost of production of each article (in rupees) was 3 more than twice the number of articles produced on that day. If the total cost of production on that day was ` 90, find the number of articles produced and the cost of each article. 4.4 Nature of Roots The equation ax2 + bx + c = 0 are given by x = – b b ac a   If b2 – 4ac > 0, we get two distinct real roots b ac b a a    and – b ac b a a   . If b2 – 4ac = 0, then x = b a   , i.e., or – b b x a a   So, the roots of the equation ax2 + bx + c = 0 are both 2 b a  Therefore, we say that the quadratic equation ax2 + bx + c = 0 has two equal real roots in this case. If b2 – 4ac < 0, then there"
+    },
+    {
+      "topic_id": "ch04_s5",
+      "chapter_id": "ch04",
+      "section_number": "4.5",
+      "topic_name": "Summary",
+      "start_page": 47,
+      "end_page": 48,
+      "source_excerpt": "EXERCISE 4.3 1. Find the nature of the roots of the following quadratic equations. If the real roots exist, find them: (i) 2x2 – 3x + 5 = 0 (ii) 3x2 – 4 3 x + 4 = 0 (iii) 2x2 – 6x + 3 = 0 2. Find the values of k for each of the following quadratic equations, so that they have two equal roots. (i) 2x2 + kx + 3 = 0 (ii) kx (x – 2) + 6 = 0 3. Is it possible to design a rectangular mango grove whose length is twice its breadth, and the area is 800 m2? If so, find its length and breadth. 4. Is the following situation possible? If so, determine their present ages. The sum of the ages of two friends is 20 years. Four years ago, the product of their ages in years was 48. 5. Is it possible to design a rectangular park of perimeter 80 m and area 400 m2? If so, find its length and breadth. 4.5 Summary In this chapter, you have studied the following points: 1. A quadratic equation in the variable x is of the form ax2 + bx + c = 0, where a, b, c are real numbers and a  0. 2. A real number  is said to be a root of the quadratic equation ax2 + bx + c = 0, if a2 + b + c = 0. The zeroes of the quadratic polynomial ax2 + bx + c and the roots of the quadratic equation ax2 + bx + c = 0 are the same. 3. If we can factorise ax2 + bx + c, a  0, into a product of two linear factors, then the roots of the quadratic equation ax2 + bx + c = 0 can be found by equating each factor to zero. 4. Quadratic formula: The roots of a quadratic equation ax2 + bx + c = 0 are given by , b b ac a   provided b2 – 4ac  0. 5. A quadratic equation ax2 + bx + c = 0 has (i) two distinct real roots, if b2 – 4ac > 0, (ii) two equal roots (i.e., coincident roots), if b2 – 4ac = 0, and (iii) no real roots, if b2 – 4ac < 0. NOTE"
+    },
+    {
+      "topic_id": "ch05_s1",
+      "chapter_id": "ch05",
+      "section_number": "5.1",
+      "topic_name": "Introduction",
+      "start_page": 49,
+      "end_page": 50,
+      "source_excerpt": "5.1 Introduction You must have observed that in nature, many things follow a certain pattern, such as the petals of a sunflower, the holes of a honeycomb, the grains on a maize cob, the spirals on a pineapple and on a pine cone, etc. We now look for some patterns which occur in our day-to-day life. Some such examples are : (i) Reena applied for a job and got selected. She has been offered a job with a starting monthly salary of ` 8000, with an annual increment of ` 500 in her salary. Her salary (in `) for the 1st, 2nd, 3rd, . . . years will be, respectively 8000, 8500, 9000, . . . . (ii) The lengths of the rungs of a ladder decrease uniformly by 2 cm from bottom to top (see Fig. 5.1). The bottom rung is 45 cm in length. The lengths (in cm) of the 1st, 2nd, 3rd, . . ., 8th rung from the bottom to the top are, respectively 45, 43, 41, 39, 37, 35, 33, 31 (iii) In a savings scheme, the amount becomes 5 4 times of itself after every 3 years. The maturity amount (in `) of an investment of ` 8000 after 3, 6, 9 and 12 years will be, respectively : 10000, 12500, 15625, 19531.25 (iv) The number of unit squares in squares with side 1, 2, 3, . . . units (see Fig. 5.2) are, respectively 12, 22, 32, . . . . (v) Shakila puts ` 100 into her daughter’s money box when she was one year old and increased the amount by ` 50 every year. The amounts of money (in `) in the box on the 1st, 2nd, 3rd, 4th, . . . birthday were 100, 150, 200, 250, . . ., respectively. (vi) A pair of rabbits are too young to produce in their first month. In the second, and every subsequent month, they produce a new pair. Each new pair of rabbits produce a new pair in their second month and in every subsequent month (see the 1st, 2nd, 3rd, . . ., 6th month, respectively are : 1, 1, 2, 3, 5, 8"
+    },
+    {
+      "topic_id": "ch05_s2",
+      "chapter_id": "ch05",
+      "section_number": "5.2",
+      "topic_name": "Arithmetic Progressions",
+      "start_page": 51,
+      "end_page": 55,
+      "source_excerpt": "In the examples above, we observe some patterns. In some, we find that the succeeding terms are obtained by adding a fixed number, in other by multiplying with a fixed number, in another we find that they are squares of consecutive numbers, and so on. In this chapter, we shall discuss one of these patterns in which succeeding terms are obtained by adding a fixed number to the preceding terms. We shall also see how to find their nth terms and the sum of n consecutive terms, and use this knowledge in solving some daily life problems. 5.2 Arithmetic Progressions Consider the following lists of numbers : (i) 1, 2, 3, 4, . . . (ii) 100, 70, 40, 10, . . . (iii) –3, –2, –1, 0, . . . (iv) 3, 3, 3, 3, . . . (v) –1.0, –1.5, –2.0, –2.5, . . . Each of the numbers in the list is called a term. Given a term, can you write the next term in each of the lists above? If so, how will you write it? Perhaps by following a pattern or rule. Let us observe and write the rule. In (i), each term is 1 more than the term preceding it. In (ii), each term is 30 less than the term preceding it. In (iii), each term is obtained by adding 1 to the term preceding it. In (iv), all the terms in the list are 3 , i.e., each term is obtained by adding (or subtracting) 0 to the term preceding it. In (v), each term is obtained by adding – 0.5 to (i.e., subtracting 0.5 from) the term preceding it. In all the lists above, we see that successive terms are obtained by adding a fixed number to the preceding terms. Such list of numbers is said to form an Arithmetic Progression ( AP ). So, an arithmetic progression is a list of numbers in which each term is obtained by adding a fixed number to the preceding term except the first term. This fixed number is called the common difference of the AP. Remember that it can be"
+    },
+    {
+      "topic_id": "ch05_s3",
+      "chapter_id": "ch05",
+      "section_number": "5.3",
+      "topic_name": "nth Term of an AP",
+      "start_page": 56,
+      "end_page": 62,
+      "source_excerpt": "(ix) 1, 3, 9, 27, . . . (x) a, 2a, 3a, 4a, . . . (xi) a, a2, a3, a4, . . . (xii) 2, 8, 18 , 32, . . . (xiii) 3, 6, 9 , 12 , . . . (xiv) 12, 32, 52, 72, . . . (xv) 12, 52, 72, 73, . . . 5.3 nth Term of an AP Let us consider the situation again, given in Section 5.1 in which Reena applied for a job and got selected. She has been offered the job with a starting monthly salary of ` 8000, with an annual increment of ` 500. What would be her monthly salary for the fifth year? To answer this, let us first see what her monthly salary for the second year would be. It would be ` (8000 + 500) = ` 8500. In the same way, we can find the monthly salary for the 3rd, 4th and 5th year by adding ` 500 to the salary of the previous year. So, the salary for the 3rd year = ` (8500 + 500) = ` (8000 + 500 + 500) = ` (8000 + 2 × 500) = ` [8000 + (3 – 1) × 500] (for the 3rd year) = ` 9000 Salary for the 4th year = ` (9000 + 500) = ` (8000 + 500 + 500 + 500) = ` (8000 + 3 × 500) = ` [8000 + (4 – 1) × 500] (for the 4th year) = ` 9500 Salary for the 5th year = ` (9500 + 500) = ` (8000+500+500+500 + 500) = ` (8000 + 4 × 500) = ` [8000 + (5 – 1) × 500] (for the 5th year) = ` 10000 Observe that we are getting a list of numbers 8000, 8500, 9000, 9500, 10000, . . . These numbers are in AP. (Why?) Now, looking at the pattern formed above, can you find her monthly salary for the 6th year? The 15th year? And, assuming that she will still be working in the job, what about the monthly salary for the 25th year? You would calculate this by adding ` 500 each time to the salary of the previous year to give the answer. Can we make this process shorter? Let us see. You may have already got some idea from the way we have obtained the salaries above. Salary for the 15th year = Salary for the 14th year + ` 500 = = `"
+    },
+    {
+      "topic_id": "ch05_s4",
+      "chapter_id": "ch05",
+      "section_number": "5.4",
+      "topic_name": "Sum of First n Terms of an AP",
+      "start_page": 63,
+      "end_page": 71,
+      "source_excerpt": "17. Find the 20th term from the last term of the AP : 3, 8, 13, . . ., 253. 18. The sum of the 4th and 8th terms of an AP is 24 and the sum of the 6th and 10th terms is 44. Find the first three terms of the AP. 19. Subba Rao started work in 1995 at an annual salary of ` 5000 and received an increment of ` 200 each year. In which year did his income reach ` 7000? 20. Ramkali saved ` 5 in the first week of a year and then increased her weekly savings by ` 1.75. If in the nth week, her weekly savings become ` 20.75, find n. 5.4 Sum of First n Terms of an AP Let us consider the situation again given in Section 5.1 in which Shakila put ` 100 into her daughter’s money box when she was one year old, ` 150 on her second birthday, ` 200 on her third birthday and will continue in the same way. How much money will be collected in the money box by the time her daughter is 21 years old? Here, the amount of money (in `) put in the money box on her first, second, third, fourth . . . birthday were respectively 100, 150, 200, 250, . . . till her 21st birthday. To find the total amount in the money box on her 21st birthday, we will have to write each of the 21 numbers in the list above and then add them up. Don’t you think it would be a tedious and time consuming process? Can we make the process shorter? This would be possible if we can find a method for getting this sum. Let us see. We consider the problem given to Gauss (about whom you read in Chapter 1), to solve when he was just 10 years old. He was asked to find the sum of the positive integers from 1 to 100. He immediately replied that the sum is 5050. Can you guess how did he do? He wrote : S = 1 + 2 + 3 + . . . + 99 + 100 And then, reversed the numbers to write S = 100 + 99 + . . . + 3 + 2 + 1 Adding these two, he got 2S = (100 +"
+    },
+    {
+      "topic_id": "ch05_s5",
+      "chapter_id": "ch05",
+      "section_number": "5.5",
+      "topic_name": "Summary",
+      "start_page": 72,
+      "end_page": 72,
+      "source_excerpt": "5.5 Summary In this chapter, you have studied the following points : 1. An arithmetic progression (AP) is a list of numbers in which each term is obtained by adding a fixed number d to the preceding term, except the first term. The fixed number d is called the common difference. The general form of an AP is a, a + d, a + 2d, a + 3d, . . . 2. A given list of numbers a1, a2, a3, . . . is an AP, if the differences a2 – a1, a3 – a2, a4 – a3, . . ., give the same value, i.e., if ak + 1 – ak is the same for different values of k. 3. In an AP with first term a and common difference d, the nth term (or the general term) is given by an = a + (n – 1) d. 4. The sum of the first n terms of an AP is given by : S =   ( 1) n a n d   5. If l is the last term of the finite AP, say the nth term, then the sum of all terms of the AP is given by : S = ( ) n a l  A NOTE TO THE READER If a, b, c are in AP, then b = a c  and b is called the arithmetic mean of a and c."
+    },
+    {
+      "topic_id": "ch06_s1",
+      "chapter_id": "ch06",
+      "section_number": "6.1",
+      "topic_name": "Introduction",
+      "start_page": 73,
+      "end_page": 73,
+      "source_excerpt": "6.1 Introduction You are familiar with triangles and many of their properties from your earlier classes. In Class IX, you have studied congruence of triangles in detail. Recall that two figures are said to be congruent, if they have the same shape and the same size. In this chapter, we shall study about those figures which have the same shape but not necessarily the same size. Two figures having the same shape (and not necessarily the same size) are called similar figures. In particular, we shall discuss the similarity of triangles and apply this knowledge in giving a simple proof of Pythagoras Theorem learnt earlier. Can you guess how heights of mountains (say Mount Everest) or distances of some long distant objects (say moon) have been found out? Do you think these have"
+    },
+    {
+      "topic_id": "ch06_s2",
+      "chapter_id": "ch06",
+      "section_number": "6.2",
+      "topic_name": "Similar Figures",
+      "start_page": 74,
+      "end_page": 78,
+      "source_excerpt": "been measured directly with the help of a measuring tape? In fact, all these heights and distances have been found out using the idea of indirect measurements, which is based on the principle of similarity of figures (see Example 7, Q.15 of Exercise 6.3 and also Chapters 8 and 9 of this book). 6.2 Similar Figures In Class IX, you have seen that all circles with the same radii are congruent, all squares with the same side lengths are congruent and all equilateral triangles with the same side lengths are congruent. Now consider any two (or more) circles [see Fig. 6.1 (i)]. Are they congruent? Since all of them do not have the same radius, they are not congruent to each other. Note that some are congruent and some are not, but all of them have the same shape. So they all are, what we call, similar. Two similar figures have the same shape but not necessarily the same size. Therefore, all circles are similar. What about two (or more) squares or two (or more) equilateral triangles [see Fig. 6.1 (ii) and (iii)]? As observed in the case of circles, here also all squares are similar and all equilateral triangles are similar. From the above, we can say that all congruent figures are similar but the similar figures need not be congruent. Can a circle and a square be similar? Can a triangle and a square be similar? These questions can be answered by just looking at the figures (see Fig. 6.1). Evidently these figures are not similar. (Why?) What can you say about the two quadrilaterals ABCD and PQRS (see Fig 6.2)?Are they similar? These figures appear to be similar but we cannot be certain about it.Therefore, we must have some definition of similarity of figures and based on this definition some rules to decide whether the two given figures are similar or not. For this, let us look "
+    },
+    {
+      "topic_id": "ch06_s3",
+      "chapter_id": "ch06",
+      "section_number": "6.3",
+      "topic_name": "Similarity of Triangles",
+      "start_page": 79,
+      "end_page": 84,
+      "source_excerpt": "6.3 Similarity of Triangles What can you say about the similarity of two triangles? You may recall that triangle is also a polygon. So, we can state the same conditions for the similarity of two triangles. That is: Two triangles are similiar, if (i) their corresponding angles are equal and (ii) their corresponding sides are in the same ratio (or proportion). Note that if corresponding angles of two triangles are equal, then they are known as equiangular triangles. A famous Greek mathematician Thales gave an important truth relating to two equiangular triangles which is as follows: The ratio of any two corresponding sides in two equiangular triangles is always the same. It is believed that he had used a result called the Basic Proportionality Theorem (now known as the Thales Theorem) for the same. To understand the Basic Proportionality Theorem, let us perform the following activity: Activity 2 : Draw any angle XAY and on its one arm AX, mark points (say five points) P, Q, D, R and B such that AP = PQ = QD = DR = RB. Now, through B, draw any line intersecting arm AY at C (see Fig. 6.9). Also, through the point D, draw a line parallel to BC to intersect AC at E. Do you observe from your constructions that AD DB  ? Measure AE and EC. What about AE EC ? Observe that AE EC is also equal to 3 2 . Thus, you can see that in  ABC, DE || BC and AD AE DB EC  . Is it a coincidence? No, it is due to the following theorem (known as the Basic Proportionality Theorem): Thales (640 – 546 B.C.) Theorem 6.1 : If a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, the other two sides are divided in the same ratio. Proof : We are given a triangle ABC in which a line parallel to side BC intersects other two sides AB and AC at D and E res"
+    },
+    {
+      "topic_id": "ch06_s4",
+      "chapter_id": "ch06",
+      "section_number": "6.4",
+      "topic_name": "Criteria for Similarity of Triangles",
+      "start_page": 85,
+      "end_page": 96,
+      "source_excerpt": "5. In Fig. 6.20, DE || OQ and DF || OR. Show that EF || QR. 6. In Fig. 6.21, A, B and C are points on OP, OQ and OR respectively such that AB || PQ and AC || PR. Show that BC || QR. 7. Using Theorem 6.1, prove that a line drawn through the mid-point of one side of a triangle parallel to another side bisects the third side. (Recall that you have proved it in Class IX). 8. Using Theorem 6.2, prove that the line joining the mid-points of any two sides of a triangle is parallel to the third side. (Recall that you have done it in Class IX). 9. ABCD is a trapezium in which AB || DC and its diagonals intersect each other at the point O. Show that AO CO BO DO   10. The diagonals of a quadrilateral ABCD intersect each other at the point O such that AO CO BO DO   Show that ABCD is a trapezium. 6.4 Criteria for Similarity of Triangles In the previous section, we stated that two triangles are similar, if (i) their corresponding angles are equal and (ii) their corresponding sides are in the same ratio (or proportion). That is, in  ABC and  DEF, if (i)  A =  D,  B =  E,  C =  F and (ii) AB BC CA , DE EF FD   then the two triangles are similar (see Fig. 6.22). Here, you can see that A corresponds to D, B corresponds to E and C corresponds to F. Symbolically, we write the similarity of these two triangles as ‘ ABC ~  DEF’ and read it as ‘triangle ABC is similar to triangle DEF’. The symbol ‘~’ stands for ‘is similar to’. Recall that you have used the symbol ‘’ for ‘is congruent to’ in Class IX. It must be noted that as done in the case of congruency of two triangles, the similarity of two triangles should also be expressed symbolically, using correct correspondence of their vertices. For example, for the triangles ABC and DEF of can write  BAC ~  EDF. Now a natural q"
+    },
+    {
+      "topic_id": "ch06_s5",
+      "chapter_id": "ch06",
+      "section_number": "6.5",
+      "topic_name": "Summary",
+      "start_page": 97,
+      "end_page": 98,
+      "source_excerpt": "11. In Fig. 6.40, E is a point on side CB produced of an isosceles triangle ABC with AB = AC. If AD  BC and EF  AC, prove that  ABD ~  ECF. 12. Sides AB and BC and median AD of a triangle ABC are respectively propor- tional to sides PQ and QR and median PM of  PQR (see Fig. 6.41). Show that  ABC ~  PQR. 13. D is a point on the side BC of a triangle ABC such that  ADC =  BAC. Show that CA2 = CB.CD. 14. Sides AB and AC and median AD of a triangle ABC are respectively proportional to sides PQ and PR and median PM of another triangle PQR. Show that  ABC ~  PQR. 15. A vertical pole of length 6 m casts a shadow 4 m long on the ground and at the same time a tower casts a shadow 28 m long. Find the height of the tower. 16. If AD and PM are medians of triangles ABC and PQR, respectively where  ABC ~  PQR, prove that AB AD PQ PM   6.5 Summary In this chapter you have studied the following points : 1. Two figures having the same shape but not necessarily the same size are called similar figures. 2. All the congruent figures are similar but the converse is not true. 3. Two polygons of the same number of sides are similar, if (i) their corresponding angles are equal and (ii) their corresponding sides are in the same ratio (i.e., proportion). 4. If a line is drawn parallel to one side of a triangle to intersect the other two sides in distinct points, then the other two sides are divided in the same ratio. 5. If a line divides any two sides of a triangle in the same ratio, then the line is parallel to the third side. 6. If in two triangles, corresponding angles are equal, then their corresponding sides are in the same ratio and hence the two triangles are similar (AAA similarity criterion). 7. If in two triangles, two angles of one triangle are respectively equal to the"
+    },
+    {
+      "topic_id": "ch07_s1",
+      "chapter_id": "ch07",
+      "section_number": "7.1",
+      "topic_name": "Introduction",
+      "start_page": 99,
+      "end_page": 99,
+      "source_excerpt": "7.1 Introduction In Class IX, you have studied that to locate the position of a point on a plane, we require a pair of coordinate axes. The distance of a point from the y-axis is called its x-coordinate, or abscissa. The distance of a point from the x-axis is called its y-coordinate, or ordinate. The coordinates of a point on the x-axis are of the form (x, 0), and of a point on the y-axis are of the form (0, y). Here is a play for you. Draw a set of a pair of perpendicular axes on a graph paper. Now plot the following points and join them as directed: Join the point A(4, 8) to B(3, 9) to C(3, 8) to D(1, 6) to E(1, 5) to F(3, 3) to G(6, 3) to H(8, 5) to I(8, 6) to J(6, 8) to K(6, 9) to L(5, 8) to A. Then join the points P(3.5, 7), Q (3, 6) and R(4, 6) to form a triangle. Also join the points X(5.5, 7), Y(5, 6) and Z(6, 6) to form a triangle. Now join S(4, 5), T(4.5, 4) and U(5, 5) to form a triangle. Lastly join S to the points (0, 5) and (0, 6) and join U to the points (9, 5) and (9, 6). What picture have you got? Also, you have seen that a linear equation in two variables of the form ax + by + c = 0, (a, b are not simultaneously zero), when represented graphically, gives a straight line. Further, in Chapter 2, you have seen the graph of y = ax2 + bx + c (a ¹ 0), is a parabola. In fact, coordinate geometry has been developed as an algebraic tool for studying geometry of figures. It helps us to study geometry using algebra, and understand algebra with the help of geometry. Because of this, coordinate geometry is widely applied in various fields such as physics, engineering, navigation, seismology and art! In this chapter, you will learn how to find the distance between the two points whose coordinates are given. You will also study how to find the coordinates of the poin"
+    },
+    {
+      "topic_id": "ch07_s2",
+      "chapter_id": "ch07",
+      "section_number": "7.2",
+      "topic_name": "Distance Formula",
+      "start_page": 100,
+      "end_page": 105,
+      "source_excerpt": "7.2 Distance Formula Let us consider the following situation: A town B is located 36 km east and 15 km north of the town A. How would you find the distance from town A to town B without actually measuring it. Let us see. This situation can be represented graphically as shown in to calculate this distance. Now, suppose two points lie on the x-axis. Can we find the distance between them? For instance, consider two points A(4, 0) and B(6, 0) in Fig. 7.2. The points A and B lie on the x-axis. From the figure you can see that OA = 4 units and OB = 6 units. Therefore, the distance of B from A, i.e., AB = OB – OA = 6 – 4 = 2 units. So, if two points lie on the x-axis, we can easily find the distance between them. Now, suppose we take two points lying on the y-axis. Can you find the distance between them. If the points C(0, 3) and D(0, 8) lie on the y-axis, similarly we find that CD = 8 – 3 = 5 units (see Fig. 7.2). Next, can you find the distance of A from C (in Fig. 7.2)? Since OA = 4 units and OC = 3 units, the distance of A from C, i.e., AC =  = 5 units. Similarly, you can find the distance of B from D = BD = 10 units. Now, if we consider two points not lying on coordinate axis, can we find the distance between them? Yes! We shall use Pythagoras theorem to do so. Let us see an example. In Fig. 7.3, the points P(4, 6) and Q(6, 8) lie in the first quadrant. How do we use Pythagoras theorem to find the distance between them? Let us draw PR and QS perpendicular to the x-axis from P and Q respectively. Also, draw a perpendicular from P on QS to meet QS at T. Then the coordinates of R and S are (4, 0) and (6, 0), respectively. So, RS = 2 units. Also, QS = 8 units and TS = PR = 6 units. Therefore, QT = 2 units and PT = RS = 2 units. Now, using the Pythagoras theorem, we have PQ2 "
+    },
+    {
+      "topic_id": "ch07_s3",
+      "chapter_id": "ch07",
+      "section_number": "7.3",
+      "topic_name": "Section Formula",
+      "start_page": 106,
+      "end_page": 111,
+      "source_excerpt": "9. If Q(0, 1) is equidistant from P(5, –3) and R(x, 6), find the values of x. Also find the distances QR and PR. 10. Find a relation between x and y such that the point (x, y) is equidistant from the point (3, 6) and (– 3, 4). 7.3 Section Formula Let us recall the situation in Section 7.2. Suppose a telephone company wants to position a relay tower at P between A and B is such a way that the distance of the tower from B is twice its distance from A. If P lies on AB, it will divide AB in the ratio 1 : 2 (see Fig. 7.9). If we take A as the origin O, and 1 km as one unit on both the axis, the coordinates of B will be (36, 15). In order to know the position of the tower, we must know the coordinates of P. How do we find these coordinates? Let the coordinates of P be (x, y). Draw perpendiculars from P and B to the x-axis, meeting it in D and E, respectively. Draw PC perpendicular to BE. Then, by the AA similarity criterion, studied in Chapter 6,  POD and  BPC are similar. Therefore , OD OP PC PB   , and PD OP BC PB   So, x x   and y y    These equations give x = 12 and y = 5. You can check that P(12, 5) meets the condition that OP : PB = 1 : 2. Now let us use the understanding that you may have developed through this example to obtain the general formula. Consider any two points A(x1, y1) and B(x2, y2) and assume that P (x, y) divides AB internally in the ratio m1 : m2, i.e., PA PB m m  (see Fig. 7.10). Draw AR, PS and BT perpendicular to the x-axis. Draw AQ and PC parallel to the x-axis. Then, by the AA similarity criterion,  PAQ ~  BPC Therefore, PA AQ BP PC  = PQ BC (1) Now, AQ = RS = OS – OR = x – x1 PC = ST = OT – OS = x2 – x PQ = PS – QS = PS – AR = y – y1 BC = BT– CT = BT – PS = y2 – y Substituting these values in (1), we get m m = x x y y x x y y   "
+    },
+    {
+      "topic_id": "ch07_s4",
+      "chapter_id": "ch07",
+      "section_number": "7.4",
+      "topic_name": "Summary",
+      "start_page": 112,
+      "end_page": 112,
+      "source_excerpt": "7.4 Summary In this chapter, you have studied the following points : 1. The distance between P(x1, y1) and Q(x2, y2) is ( ) ( ) . x x y y    2. The distance of a point P(x, y) from the origin is 2 . x y  3. The coordinates of the point P(x, y) which divides the line segment joining the points A(x1, y1) and B(x2, y2) internally in the ratio m1 : m2 are 1 2 2 1 , m x m x m y m y m m m m            4. The mid-point of the line segment joining the points P(x1, y1) and Q(x2, y2) is , x x y y        . A NOTE TO THE READER Section 7.3 discusses the Section Formula for the coordinates (x, y) of a point P which divides internally the line segment joining the points A(x1, y1) and B(x2, y2) in the ratio m1 : m2 as follows : x = 1 2 2 1 m x m x m m   , y = m y m y m m   Note that, here, PA : PB = m1 : m2. However, if P does not lie between A and B but lies on the line AB, outside the line segment AB, and PA : PB = m1 : m2, we say that P divides externally the line segment joining the points A and B. You will study Section Formula for such case in higher classes."
+    },
+    {
+      "topic_id": "ch08_s1",
+      "chapter_id": "ch08",
+      "section_number": "8.1",
+      "topic_name": "Introduction",
+      "start_page": 113,
+      "end_page": 113,
+      "source_excerpt": "There is perhaps nothing which so occupies the middle position of mathematics as trigonometry. – J.F. Herbart (1890) 8.1 Introduction You have already studied about triangles, and in particular, right triangles, in your earlier classes. Let us take some examples from our surroundings where right triangles can be imagined to be formed. For instance : 1. Suppose the students of a school are visiting Qutub Minar. Now, if a student is looking at the top of the Minar, a right triangle can be imagined to be made, as shown in Fig 8.1. Can the student find out the height of the Minar, without actually measuring it? 2. Suppose a girl is sitting on the balcony of her house located on the bank of a river. She is looking down at a flower pot placed on a stair of a temple situated nearby on the other bank of the river. A right triangle is imagined to be made in this situation as shown in Fig.8.2. If you know the height at which the person is sitting, can you find the width of the river? INTRODUCTION TO TRIGONOMETRY"
+    },
+    {
+      "topic_id": "ch08_s2",
+      "chapter_id": "ch08",
+      "section_number": "8.2",
+      "topic_name": "Trigonometric Ratios",
+      "start_page": 114,
+      "end_page": 120,
+      "source_excerpt": "3. Suppose a hot air balloon is flying in the air. A girl happens to spot the balloon in the sky and runs to her mother to tell her about it. Her mother rushes out of the house to look at the balloon.Now when the girl had spotted the balloon intially it was at point A. When both the mother and daughter came out to see it, it had already travelled to another point B. Can you find the altitude of B from the ground? In all the situations given above, the distances or heights can be found by using some mathematical techniques, which come under a branch of mathematics called ‘trigonometry’. The word ‘trigonometry’ is derived from the Greek words ‘tri’ (meaning three), ‘gon’ (meaning sides) and ‘metron’ (meaning measure). In fact, trigonometry is the study of relationships between the sides and angles of a triangle. The earliest known work on trigonometry was recorded in Egypt and Babylon. Early astronomers used it to find out the distances of the stars and planets from the Earth. Even today, most of the technologically advanced methods used in Engineering and Physical Sciences are based on trigonometrical concepts. In this chapter, we will study some ratios of the sides of a right triangle with respect to its acute angles, called trigonometric ratios of the angle. We will restrict our discussion to acute angles only. However, these ratios can be extended to other angles also. We will also define the trigonometric ratios for angles of measure 0° and 90°. We will calculate trigonometric ratios for some specific angles and establish some identities involving these ratios, called trigonometric identities. 8.2 Trigonometric Ratios In Section 8.1, you have seen some right triangles imagined to be formed in different situations. Let us take a right triangle ABC as shown in Fig. 8.4"
+    },
+    {
+      "topic_id": "ch08_s3",
+      "chapter_id": "ch08",
+      "section_number": "8.3",
+      "topic_name": "Trigonometric Ratios of Some Specific Angles",
+      "start_page": 121,
+      "end_page": 127,
+      "source_excerpt": "EXERCISE 8.1 1. In  ABC, right-angled at B, AB = 24 cm, BC = 7 cm. Determine : (i) sin A, cos A (ii) sin C, cos C 2. In Fig. 8.13, find tan P – cot R. 3. If sin A = 3 , calculate cos A and tan A. 4. Given 15 cot A = 8, find sin A and sec A. 5. Given sec  = 13 , 12 calculate all other trigonometric ratios. 6. If  A and  B are acute angles such that cos A = cos B, then show that  A =  B. 7. If cot  = 7 , 8 evaluate : (i) (1 sin )(1 sin ) , (1 cos )(1 cos )         (ii) cot2  8. If 3 cot A = 4, check whether tan A 1 + tan A  = cos2 A – sin2A or not. 9. In triangle ABC, right-angled at B, if tan A = 1 , 3 find the value of: (i) sin A cos C + cos A sin C (ii) cos A cos C – sin A sin C 10. In  PQR, right-angled at Q, PR + QR = 25 cm and PQ = 5 cm. Determine the values of sin P, cos P and tan P. 11. State whether the following are true or false. Justify your answer. (i) The value of tan A is always less than 1. (ii) sec A = 12 5 for some value of angle A. (iii) cos A is the abbreviation used for the cosecant of angle A. (iv) cot A is the product of cot and A. (v) sin  = 4 3 for some angle . 8.3 Trigonometric Ratios of Some Specific Angles From geometry, you are already familiar with the construction of angles of 30°, 45°, 60° and 90°. In this section, we will find the values of the trigonometric ratios for these angles and, of course, for 0°. Trigonometric Ratios of 45° In  ABC, right-angled at B, if one angle is 45°, then the other angle is also 45°, i.e.,  A =  C = 45° (see Fig. 8.14). So, BC = AB (Why?) Now, Suppose BC = AB = a. Then by Pythagoras Theorem, AC2 = AB2 + BC2 = a2 + a2 = 2a2, and, therefore, AC = a  Using the definitions of the trigonometric ratios, we have : sin 45° = side opposite to angle 45° BC hypotenuse AC a a    cos 45° = side "
+    },
+    {
+      "topic_id": "ch08_s4",
+      "chapter_id": "ch08",
+      "section_number": "8.4",
+      "topic_name": "Trigonometric Identities",
+      "start_page": 128,
+      "end_page": 131,
+      "source_excerpt": "8.4 Trigonometric Identities You may recall that an equation is called an identity when it is true for all values of the variables involved. Similarly, an equation involving trigonometric ratios of an angle is called a trigonometric identity, if it is true for all values of the angle(s) involved. In this section, we will prove one trigonometric identity, and use it further to prove other useful trigonometric identities. In  ABC, right-angled at B (see Fig. 8.21), we have: AB2 + BC2 = AC2 (1) Dividing each term of (1) by AC2, we get AB BC AC AC  = AC AC i.e., AB BC AC AC              = AC AC       i.e., (cos A)2 + (sin A)2 = 1 i.e., cos2 A + sin2 A = 1 (2) This is true for all A such that 0°  A  90°. So, this is a trigonometric identity. Let us now divide (1) by AB2. We get AB BC AB AB  = AC AB or, AB BC AB AB              = AC AB       i.e., 1 + tan2 A = sec2 A (3) Is this equation true for A = 0°? Yes, it is. What about A = 90°? Well, tan A and sec A are not defined for A = 90°. So, (3) is true for all A such that 0°  A  90°. Let us see what we get on dividing (1) by BC2. We get AB BC BC BC  = AC BC i.e., AB BC BC BC              = AC BC       i.e., cot2 A + 1 = cosec2 A (4) Note that cosec A and cot A are not defined for A = 0°. Therefore (4) is true for all A such that 0° < A  90°. Using these identities, we can express each trigonometric ratio in terms of other trigonometric ratios, i.e., if any one of the ratios is known, we can also determine the values of other trigonometric ratios. Let us see how we can do this using these identities. Suppose we know that tan A =  Then, cot A = 3 . Since, sec2 A = 1 + tan2 A = 4,   sec A = 2 3 , and cos A = 2  Again, sin A = cos A     . Therefore, cosec A "
+    },
+    {
+      "topic_id": "ch08_s5",
+      "chapter_id": "ch08",
+      "section_number": "8.5",
+      "topic_name": "Summary",
+      "start_page": 132,
+      "end_page": 132,
+      "source_excerpt": "(ix) (cosec A – sin A)(sec A – cos A) tan A + cot A  [Hint : Simplify LHS and RHS separately] (x) tan A tan A 1 – cot A 1 + cot A                = tan2 A 8.5 Summary In this chapter, you have studied the following points : 1. In a right triangle ABC, right-angled at B, sin A = side opposite to angle A side adjacent to angle A , cos A = hypotenuse hypotenuse tan A = side opposite toangle A side adjacent to angle A . 2. sin A , cosec A = ; sec A = ; tan A = tan A = sin A cos A cot A cos A . 3. If one of the trigonometric ratios of an acute angle is known, the remaining trigonometric ratios of the angle can be easily determined. 4. The values of trigonometric ratios for angles 0°, 30°, 45°, 60° and 90°. 5. The value of sin A or cos A never exceeds 1, whereas the value of sec A (0° £ A < 90°) or cosec A (0° < A £ 90º) is always greater than or equal to 1. 6. sin2 A + cos2 A = 1, sec2 A – tan2 A = 1 for 0° £ A < 90°, cosec2 A = 1 + cot2 A for 0° < A £ 90º."
+    },
+    {
+      "topic_id": "ch09_s1",
+      "chapter_id": "ch09",
+      "section_number": "9.1",
+      "topic_name": "Heights and Distances",
+      "start_page": 133,
+      "end_page": 142,
+      "source_excerpt": "9.1 Heights and Distances In the previous chapter, you have studied about trigonometric ratios. In this chapter, you will be studying about some ways in which trigonometry is used in the life around you. Let us consider Fig. 8.1 of prvious chapter, which is redrawn below in Fig. 9.1. In this figure, the line AC drawn from the eye of the student to the top of the minar is called the line of sight. The student is looking at the top of the minar. The angle BAC, so formed by the line of sight with the horizontal, is called the angle of elevation of the top of the minar from the eye of the student. Thus, the line of sight is the line drawn from the eye of an observer to the point in the object viewed by the observer. The angle of elevation of the point viewed is SOME APPLICATIONS OF TRIGONOMETRY the angle formed by the line of sight with the horizontal when the point being viewed is above the horizontal level, i.e., the case when we raise our head to look at the object (see Fig. 9.2). Now, consider the situation given in Fig. 8.2. The girl sitting on the balcony is looking down at a flower pot placed on a stair of the temple. In this case, the line of sight is below the horizontal level. The angle so formed by the line of sight with the horizontal is called the angle of depression. Thus, the angle of depression of a point on the object being viewed is the angle formed by the line of sight with the horizontal when the point is below the horizontal level, i.e., the case when we lower our head to look at the point being viewed (see Fig. 9.3). Now, you may identify the lines of sight, and the angles so formed in Fig. 8.3. Are they angles of elevation or angles of depression? Let us refer to Fig. 9.1 again. If you want to find the height CD of the minar without actually measuring"
+    },
+    {
+      "topic_id": "ch09_s2",
+      "chapter_id": "ch09",
+      "section_number": "9.2",
+      "topic_name": "Summary",
+      "start_page": 143,
+      "end_page": 143,
+      "source_excerpt": "tower with a uniform speed. Six seconds later, the angle of depression of the car is found to be 60°. Find the time taken by the car to reach the foot of the tower from this point. 9.2 Summary In this chapter, you have studied the following points : 1. (i) The line of sight is the line drawn from the eye of an observer to the point in the object viewed by the observer. (ii) The angle of elevation of an object viewed, is the angle formed by the line of sight with the horizontal when it is above the horizontal level, i.e., the case when we raise our head to look at the object. (iii) The angle of depression of an object viewed, is the angle formed by the line of sight with the horizontal when it is below the horizontal level, i.e., the case when we lower our head to look at the object. 2. The height or length of an object or the distance between two distant objects can be determined with the help of trigonometric ratios."
+    },
+    {
+      "topic_id": "ch10_s1",
+      "chapter_id": "ch10",
+      "section_number": "10.1",
+      "topic_name": "Introduction",
+      "start_page": 144,
+      "end_page": 144,
+      "source_excerpt": "10.1 Introduction You have studied in Class IX that a circle is a collection of all points in a plane which are at a constant distance (radius) from a fixed point (centre). You have also studied various terms related to a circle like chord, segment, sector, arc etc. Let us now examine the different situations that can arise when a circle and a line are given in a plane. So, let us consider a circle and a line PQ. There can be three possibilities given in Fig. 10.1 below: In Fig. 10.1 (i), the line PQ and the circle have no common point. In this case, PQ is called a non-intersecting line with respect to the circle. In Fig. 10.1 (ii), there are two common points A and B that the line PQ and the circle have. In this case, we call the line PQ a secant of the circle. In Fig. 10.1 (iii), there is only one point A which is common to the line PQ and the circle. In this case, the line is called a tangent to the circle."
+    },
+    {
+      "topic_id": "ch10_s2",
+      "chapter_id": "ch10",
+      "section_number": "10.2",
+      "topic_name": "Tangent to a Circle",
+      "start_page": 145,
+      "end_page": 146,
+      "source_excerpt": "You might have seen a pulley fitted over a well which is used in taking out water from the well. Look at Fig. 10.2. Here the rope on both sides of the pulley, if considered as a ray, is like a tangent to the circle representing the pulley. Is there any position of the line with respect to the circle other than the types given above? You can see that there cannot be any other type of position of the line with respect to the circle. In this chapter, we will study about the existence of the tangents to a circle and also study some of their properties. 10.2 Tangent to a Circle In the previous section, you have seen that a tangent* to a circle is a line that intersects the circle at only one point. To understand the existence of the tangent to a circle at a point, let us perform the following activities: Activity 1 : Take a circular wire and attach a straight wire AB at a point P of the circular wire so that it can rotate about the point P in a plane. Put the system on a table and gently rotate the wire AB about the point P to get different positions of the straight wire [see Fig. 10.3(i)]. In various positions, the wire intersects the circular wire at P and at another point Q1 or Q2 or Q3, etc. In one position, you will see that it will intersect the circle at the point P only (see position AB of AB). This shows that a tangent exists at the point P of the circle. On rotating further, you can observe that in all other positions of AB, it will intersect the circle at P and at another point, say R1 or R2 or R3, etc. So, you can observe that there is only one tangent at a point of the circle. While doing activity above, you must have observed that as the position AB moves towards the position A B, the common point, say Q1, of the line AB and the circle gradually comes neare"
+    },
+    {
+      "topic_id": "ch10_s3",
+      "chapter_id": "ch10",
+      "section_number": "10.3",
+      "topic_name": "Number of Tangents from a Point on a Circle",
+      "start_page": 147,
+      "end_page": 152,
+      "source_excerpt": "Take a point Q on XY other than P and join OQ (see Fig. 10.5). The point Q must lie outside the circle. (Why? Note that if Q lies inside the circle, XY will become a secant and not a tangent to the circle). Therefore, OQ is longer than the radius OP of the circle. That is, OQ > OP. Since this happens for every point on the line XY except the point P, OP is the shortest of all the distances of the point O to the points of XY. So OP is perpendicular to XY. (as shown in Theorem A1.7.) Remarks 1. By theorem above, we can also conclude that at any point on a circle there can be one and only one tangent. 2. The line containing the radius through the point of contact is also sometimes called the ‘normal’ to the circle at the point. EXERCISE 10.1 1. How many tangents can a circle have? 2. Fill in the blanks : (i) A tangent to a circle intersects it in point (s). (ii) A line intersecting a circle in two points is called a . (iii) A circle can have parallel tangents at the most. (iv) The common point of a tangent to a circle and the circle is called . 3. A tangent PQ at a point P of a circle of radius 5 cm meets a line through the centre O at a point Q so that OQ = 12 cm. Length PQ is : (A) 12 cm (B) 13 cm (C) 8.5 cm (D) 119 cm. 4. Draw a circle and two lines parallel to a given line such that one is a tangent and the other, a secant to the circle. 10.3 Number of Tangents from a Point on a Circle To get an idea of the number of tangents from a point on a circle, let us perform the following activity: Activity 3 : Draw a circle on a paper. Take a point P inside it. Can you draw a tangent to the circle through this point? You will find that all the lines through this point intersect the circle in two points. So, it is not possible to draw any tangent to a circle through a point ins"
+    },
+    {
+      "topic_id": "ch10_s4",
+      "chapter_id": "ch10",
+      "section_number": "10.4",
+      "topic_name": "Summary",
+      "start_page": 153,
+      "end_page": 153,
+      "source_excerpt": "10.4 Summary In this chapter, you have studied the following points : 1. The meaning of a tangent to a circle. 2. The tangent to a circle is perpendicular to the radius through the point of contact. 3. The lengths of the two tangents from an external point to a circle are equal."
+    },
+    {
+      "topic_id": "ch11_s1",
+      "chapter_id": "ch11",
+      "section_number": "11.1",
+      "topic_name": "Areas of Sector and Segment of a Circle",
+      "start_page": 154,
+      "end_page": 159,
+      "source_excerpt": "11.1 Areas of Sector and Segment of a Circle You have already come across the terms sector and segment of a circle in your earlier classes. Recall that the portion (or part) of the circular region enclosed by two radii and the corresponding arc is called a sector of the circle and the portion (or part) of the circular region enclosed between a chord and the corresponding arc is called a segment of the circle. Thus, in Fig. 11.1, shaded region OAPB is a sector of the circle with centre O. ∠ AOB is called the angle of the sector. Note that in this figure, unshaded region OAQB is also a sector of the circle. For obvious reasons, OAPB is called the minor sector and OAQB is called the major sector. You can also see that angle of the major sector is 360° – ∠ AOB. Now, look at Fig. 11.2 in which AB is a chord of the circle with centre O. So, shaded region APB is a segment of the circle. You can also note that unshaded region AQB is another segment of the circle formed by the chord AB. For obvious reasons, APB is called the minor segment and AQB is called the major segment. Remark : When we write ‘segment’ and ‘sector’ we will mean the ‘minor segment’ and the ‘minor sector’ respectively, unless stated otherwise. Now with this knowledge, let us try to find some relations (or formulae) to calculate their areas. Let OAPB be a sector of a circle with centre O and radius r (see Fig. 11.3). Let the degree measure of Ð AOB be q. You know that area of a circle (in fact of a circular region or disc) is pr2. In a way, we can consider this circular region to be a sector forming an angle of 360° (i.e., of degree measure 360) at the centre O. Now by applying the Unitary Method, we can arrive at the area of the sector OAPB as follows: When degree measure of the angle at the centre is 360, ar"
+    },
+    {
+      "topic_id": "ch11_s2",
+      "chapter_id": "ch11",
+      "section_number": "11.2",
+      "topic_name": "Summary",
+      "start_page": 160,
+      "end_page": 160,
+      "source_excerpt": "11.2 Summary In this chapter, you have studied the following points : 1. Length of an arc of a sector of a circle with radius r and angle with degree measure  is r    2. Area of a sector of a circle with radius r and angle with degree measure  is r    3. Area of segment of a circle = Area of the corresponding sector – Area of the corresponding triangle."
+    },
+    {
+      "topic_id": "ch12_s1",
+      "chapter_id": "ch12",
+      "section_number": "12.1",
+      "topic_name": "Introduction",
+      "start_page": 161,
+      "end_page": 161,
+      "source_excerpt": "12.1 Introduction From Class IX, you are familiar with some of the solids like cuboid, cone, cylinder, and sphere (see Fig. 12.1). You have also learnt how to find their surface areas and volumes. In our day-to-day life, we come across a number of solids made up of combinations of two or more of the basic solids as shown above. You must have seen a truck with a container fitted on its back (see Fig. 12.2), carrying oil or water from one place to another. Is it in the shape of any of the four basic solids mentioned above? You may guess that it is made of a cylinder with two hemispheres as its ends. SURFACE AREAS AND VOLUMES"
+    },
+    {
+      "topic_id": "ch12_s2",
+      "chapter_id": "ch12",
+      "section_number": "12.2",
+      "topic_name": "Surface Area of a Combination of Solids",
+      "start_page": 162,
+      "end_page": 166,
+      "source_excerpt": "Again, you may have seen an object like the one in Fig. 12.3. Can you name it? A test tube, right! You would have used one in your science laboratory. This tube is also a combination of a cylinder and a hemisphere. Similarly, while travelling, you may have seen some big and beautiful buildings or monuments made up of a combination of solids mentioned above. If for some reason you wanted to find the surface areas, or volumes, or capacities of such objects, how would you do it? We cannot classify these under any of the solids you have already studied. In this chapter, you will see how to find surface areas and volumes of such objects. 12.2 Surface Area of a Combination of Solids Let us consider the container seen in Fig. 12.2. How do we find the surface area of such a solid? Now, whenever we come across a new problem, we first try to see, if we can break it down into smaller problems, we have earlier solved. We can see that this solid is made up of a cylinder with two hemispheres stuck at either end. It would look like what we have in Fig. 12.4, after we put the pieces all together. If we consider the surface of the newly formed object, we would be able to see only the curved surfaces of the two hemispheres and the curved surface of the cylinder. So, the total surface area of the new solid is the sum of the curved surface areas of each of the individual parts. This gives, TSA of new solid = CSA of one hemisphere + CSA of cylinder + CSA of other hemisphere where TSA, CSA stand for ‘Total Surface Area’ and ‘Curved Surface Area’ respectively. Let us now consider another situation. Suppose we are making a toy by putting together a hemisphere and a cone. Let us see the steps that we would be going through. First, we would take a cone and a hemisphere and bring their flat faces"
+    },
+    {
+      "topic_id": "ch12_s3",
+      "chapter_id": "ch12",
+      "section_number": "12.3",
+      "topic_name": "Volume of a Combination of Solids",
+      "start_page": 167,
+      "end_page": 169,
+      "source_excerpt": "7. A tent is in the shape of a cylinder surmounted by a conical top. If the height and diameter of the cylindrical part are 2.1 m and 4 m respectively, and the slant height of the top is 2.8 m, find the area of the canvas used for making the tent. Also, find the cost of the canvas of the tent at the rate of ` 500 per m2. (Note that the base of the tent will not be covered with canvas.) 8. From a solid cylinder whose height is 2.4 cm and diameter 1.4 cm, a conical cavity of the same height and same diameter is hollowed out. Find the total surface area of the remaining solid to the nearest cm2. 9. A wooden article was made by scooping out a hemisphere from each end of a solid cylinder, as shown in Fig. 12.11. If the height of the cylinder is 10 cm, and its base is of radius 3.5 cm, find the total surface area of the article. 12.3 Volume of a Combination of Solids In the previous section, we have discussed how to find the surface area of solids made up of a combination of two basic solids. Here, we shall see how to calculate their volumes. It may be noted that in calculating the surface area, we have not added the surface areas of the two constituents, because some part of the surface area disappeared in the process of joining them. However, this will not be the case when we calculate the volume. The volume of the solid formed by joining two basic solids will actually be the sum of the volumes of the constituents, as we see in the examples below. Example 5 : Shanta runs an industry in a shed which is in the shape of a cuboid surmounted by a half cylinder (see Fig. 12.12). If the base of the shed is of dimension 7 m × 15 m, and the height of the cuboidal portion is 8 m, find the volume of air that the shed can hold. Further, suppose the machinery in the shed occupies a tota"
+    },
+    {
+      "topic_id": "ch12_s4",
+      "chapter_id": "ch12",
+      "section_number": "12.4",
+      "topic_name": "Summary",
+      "start_page": 170,
+      "end_page": 170,
+      "source_excerpt": "3. A gulab jamun, contains sugar syrup up to about 30% of its volume. Find approximately how much syrup would be found in 45 gulab jamuns, each shaped like a cylinder with two hemispherical ends with length 5 cm and diameter 2.8 cm (see Fig. 12.15). 4. A pen stand made of wood is in the shape of a cuboid with four conical depressions to hold pens. The dimensions of the cuboid are 15 cm by 10 cm by 3.5 cm. The radius of each of the depressions is 0.5 cm and the depth is 1.4 cm. Find the volume of wood in the entire stand (see Fig. 12.16). 5. A vessel is in the form of an inverted cone. Its height is 8 cm and the radius of its top, which is open, is 5 cm. It is filled with water up to the brim. When lead shots, each of which is a sphere of radius 0.5 cm are dropped into the vessel, one-fourth of the water flows out. Find the number of lead shots dropped in the vessel. 6. A solid iron pole consists of a cylinder of height 220 cm and base diameter 24 cm, which is surmounted by another cylinder of height 60 cm and radius 8 cm. Find the mass of the pole, given that 1 cm3 of iron has approximately 8g mass. (Use = 3.14) 7. A solid consisting of a right circular cone of height 120 cm and radius 60 cm standing on a hemisphere of radius 60 cm is placed upright in a right circular cylinder full of water such that it touches the bottom. Find the volume of water left in the cylinder, if the radius of the cylinder is 60 cm and its height is 180 cm. 8. A spherical glass vessel has a cylindrical neck 8 cm long, 2 cm in diameter; the diameter of the spherical part is 8.5 cm. By measuring the amount of water it holds, a child finds its volume to be 345 cm3. Check whether she is correct, taking the above as the inside measurements, and  = 3.14. 12.4 Summary In this chapter, you have stu"
+    },
+    {
+      "topic_id": "ch13_s1",
+      "chapter_id": "ch13",
+      "section_number": "13.1",
+      "topic_name": "Introduction",
+      "start_page": 171,
+      "end_page": 171,
+      "source_excerpt": "13.1 Introduction In Class IX, you have studied the classification of given data into ungrouped as well as grouped frequency distributions. You have also learnt to represent the data pictorially in the form of various graphs such as bar graphs, histograms (including those of varying widths) and frequency polygons. In fact, you went a step further by studying certain numerical representatives of the ungrouped data, also called measures of central tendency, namely, mean, median and mode. In this chapter, we shall extend the study of these three measures, i.e., mean, median and mode from ungrouped data to that of grouped data. We shall also discuss the concept of cumulative frequency, the cumulative frequency distribution and how to draw cumulative frequency curves, called ogives. 13.2 Mean of Grouped Data The mean (or average) of observations, as we know, is the sum of the values of all the observations divided by the total number of observations. From Class IX, recall that if x1, x2,. . ., xn are observations with respective frequencies f1, f2, . . ., fn, then this means observation x1 occurs f1 times, x2 occurs f2 times, and so on. Now, the sum of the values of all the observations = f1x1 + f2x2 + . . . + fnxn, and the number of observations = f1 + f2 + . . . + fn. So, the mean x of the data is given by x = 1 1 n n n f x f x f x f f f         Recall that we can write this in short form by using the Greek letter  (capital sigma) which means summation. That is,"
+    },
+    {
+      "topic_id": "ch13_s2",
+      "chapter_id": "ch13",
+      "section_number": "13.2",
+      "topic_name": "Mean of Grouped Data",
+      "start_page": 171,
+      "end_page": 182,
+      "source_excerpt": "13.1 Introduction In Class IX, you have studied the classification of given data into ungrouped as well as grouped frequency distributions. You have also learnt to represent the data pictorially in the form of various graphs such as bar graphs, histograms (including those of varying widths) and frequency polygons. In fact, you went a step further by studying certain numerical representatives of the ungrouped data, also called measures of central tendency, namely, mean, median and mode. In this chapter, we shall extend the study of these three measures, i.e., mean, median and mode from ungrouped data to that of grouped data. We shall also discuss the concept of cumulative frequency, the cumulative frequency distribution and how to draw cumulative frequency curves, called ogives. 13.2 Mean of Grouped Data The mean (or average) of observations, as we know, is the sum of the values of all the observations divided by the total number of observations. From Class IX, recall that if x1, x2,. . ., xn are observations with respective frequencies f1, f2, . . ., fn, then this means observation x1 occurs f1 times, x2 occurs f2 times, and so on. Now, the sum of the values of all the observations = f1x1 + f2x2 + . . . + fnxn, and the number of observations = f1 + f2 + . . . + fn. So, the mean x of the data is given by x = 1 1 n n n f x f x f x f f f         Recall that we can write this in short form by using the Greek letter  (capital sigma) which means summation. That is, x = n i i i n i i f x f     which, more briefly, is written as x =   i i i f x f , if it is understood that i varies from 1 to n. Let us apply this formula to find the mean in the following example. Example 1 : The marks obtained by 30 students of Class X of a certain school in a Mathematics paper co"
+    },
+    {
+      "topic_id": "ch13_s3",
+      "chapter_id": "ch13",
+      "section_number": "13.3",
+      "topic_name": "Mode of Grouped Data",
+      "start_page": 183,
+      "end_page": 187,
+      "source_excerpt": "8. A class teacher has the following absentee record of 40 students of a class for the whole term. Find the mean number of days a student was absent. Number of 0 - 6 6 - 10 10 - 14 14 - 20 20 - 28 28 - 38 38 - 40 days Number of students 9. The following table gives the literacy rate (in percentage) of 35 cities. Find the mean literacy rate. Literacy rate (in %) 45 - 55 55 - 65 65 - 75 75 - 85 85 - 95 Number of cities 13.3 Mode of Grouped Data Recall from Class IX, a mode is that value among the observations which occurs most often, that is, the value of the observation having the maximum frequency. Further, we discussed finding the mode of ungrouped data. Here, we shall discuss ways of obtaining a mode of grouped data. It is possible that more than one value may have the same maximum frequency. In such situations, the data is said to be multimodal. Though grouped data can also be multimodal, we shall restrict ourselves to problems having a single mode only. Let us first recall how we found the mode for ungrouped data through the following example. Example 4 : The wickets taken by a bowler in 10 cricket matches are as follows: Find the mode of the data. Solution : Let us form the frequency distribution table of the given data as follows: Number of wickets Number of matches Clearly, 2 is the number of wickets taken by the bowler in the maximum number (i.e., 3) of matches. So, the mode of this data is 2. In a grouped frequency distribution, it is not possible to determine the mode by looking at the frequencies. Here, we can only locate a class with the maximum frequency, called the modal class. The mode is a value inside the modal class, and is given by the formula: Mode = f f l h f f f            where l = lower limit of the modal class, h = size of the class i"
+    },
+    {
+      "topic_id": "ch13_s4",
+      "chapter_id": "ch13",
+      "section_number": "13.4",
+      "topic_name": "Median of Grouped Data",
+      "start_page": 188,
+      "end_page": 199,
+      "source_excerpt": "13.4 Median of Grouped Data As you have studied in Class IX, the median is a measure of central tendency which gives the value of the middle-most observation in the data. Recall that for finding the median of ungrouped data, we first arrange the data values of the observations in ascending order. Then, if n is odd, the median is the n       th observation. And, if n is even, then the median will be the average of the th n and the 1 th n        observations. Suppose, we have to find the median of the following data, which gives the marks, out of 50, obtained by 100 students in a test : Marks obtained Number of students First, we arrange the marks in ascending order and prepare a frequency table as follows : Table 13.9 Marks obtained Number of students (Frequency) Total Here n = 100, which is even. The median will be the average of the n th and the n        th observations, i.e., the 50th and 51st observations. To find these observations, we proceed as follows: Table 13.10 Marks obtained Number of students upto 25 6 + 20 = 26 upto 28 26 + 24 = 50 upto 29 50 + 28 = 78 upto 33 78 + 15 = 93 upto 38 93 + 4 = 97 upto 42 97 + 2 = 99 upto 43 99 + 1 = 100 Now we add another column depicting this information to the frequency table above and name it as cumulative frequency column. Table 13.11 Marks obtained Number of students Cumulative frequency From the table above, we see that: 50th observaton is 28 (Why?) 51st observation is 29 So, Median = 28 28.5 + = Remark : The part of Table 13.11 consisting Column 1 and Column 3 is known as Cumulative Frequency Table. The median marks 28.5 conveys the information that about 50% students obtained marks less than 28.5 and another 50% students obtained marks more than 28.5. Now, let us see how to obtain the median of grou"
+    },
+    {
+      "topic_id": "ch13_s5",
+      "chapter_id": "ch13",
+      "section_number": "13.5",
+      "topic_name": "Summary",
+      "start_page": 200,
+      "end_page": 201,
+      "source_excerpt": "5. The following table gives the distribution of the life time of 400 neon lamps : Life time (in hours) Number of lamps 1500 - 2000 2000 - 2500 2500 - 3000 3000 - 3500 3500 - 4000 4000 - 4500 4500 - 5000 Find the median life time of a lamp. 6. 100 surnames were randomly picked up from a local telephone directory and the frequency distribution of the number of letters in the English alphabets in the surnames was obtained as follows: Number of letters 1 - 4 4 - 7 7 - 10 10 - 13 13 - 16 16 - 19 Number of surnames Determine the median number of letters in the surnames. Find the mean number of letters in the surnames? Also, find the modal size of the surnames. 7. The distribution below gives the weights of 30 students of a class. Find the median weight of the students. Weight (in kg) 40 - 45 45 - 50 50 - 55 55 - 60 60 - 65 65 - 70 70 - 75 Number of students 13.5 Summary In this chapter, you have studied the following points: 1. The mean for grouped data can be found by : (i) the direct method : i i i f x x f Σ = Σ (ii) the assumed mean method : i i i f d x a f Σ = + Σ (iii) the step deviation method : i i i f u x a h f            , with the assumption that the frequency of a class is centred at its mid-point, called its class mark. 2. The mode for grouped data can be found by using the formula: Mode = f f l h f f f            where symbols have their usual meanings. 3. The cumulative frequency of a class is the frequency obtained by adding the frequencies of all the classes preceding the given class. 4. The median for grouped data is formed by using the formula: Median = cf n l h f                , where symbols have their usual meanings. A NOTE TO THE READER For calculating mode and median for grouped data, it should be ensured that the "
+    },
+    {
+      "topic_id": "ch14_s1",
+      "chapter_id": "ch14",
+      "section_number": "14.1",
+      "topic_name": "Probability — A Theoretical Approach",
+      "start_page": 202,
+      "end_page": 216,
+      "source_excerpt": "The theory of probabilities and the theory of errors now constitute a formidable body of great mathematical interest and of great practical importance. – R.S. Woodward 14.1 Probability — A Theoretical Approach Let us consider the following situation : Suppose a coin is tossed at random. When we speak of a coin, we assume it to be ‘fair’, that is, it is symmetrical so that there is no reason for it to come down more often on one side than the other. We call this property of the coin as being ‘unbiased’. By the phrase ‘random toss’, we mean that the coin is allowed to fall freely without any bias or interference. We know, in advance, that the coin can only land in one of two possible ways — either head up or tail up (we dismiss the possibility of its ‘landing’ on its edge, which may be possible, for example, if it falls on sand). We can reasonably assume that each outcome, head or tail, is as likely to occur as the other. We refer to this by saying that the outcomes head and tail, are equally likely. For another example of equally likely outcomes, suppose we throw a die once. For us, a die will always mean a fair die. What are the possible outcomes? They are 1, 2, 3, 4, 5, 6. Each number has the same possibility of showing up. So the equally likely outcomes of throwing a die are 1, 2, 3, 4, 5 and 6. Are the outcomes of every experiment equally likely? Let us see. Suppose that a bag contains 4 red balls and 1 blue ball, and you draw a ball without looking into the bag. What are the outcomes? Are the outcomes — a red ball and a blue ball equally likely? Since there are 4 red balls and only one blue ball, you would agree that you are more likely to get a red ball than a blue ball. So, the outcomes (a red ball or a blue ball) are not equally likely. However, the outcome of dr"
+    },
+    {
+      "topic_id": "ch14_s2",
+      "chapter_id": "ch14",
+      "section_number": "14.2",
+      "topic_name": "Summary",
+      "start_page": 217,
+      "end_page": 217,
+      "source_excerpt": "A NOTE TO THE READER The experimental or empirical probability of an event is based on what has actually happened while the theoretical probability of the event attempts to predict what will happen on the basis of certain assumptions. As the number of trials in an experiment, go on increasing we may expect the experimental and theoretical probabilities to be nearly the same. 25. Which of the following arguments are correct and which are not correct? Give reasons for your answer. (i) If two coins are tossed simultaneously there are three possible outcomes—two heads, two tails or one of each. Therefore, for each of these outcomes, the probability is 1 3 (ii) If a die is thrown, there are two possible outcomes—an odd number or an even number. Therefore, the probability of getting an odd number is 1 2 . 14.2 Summary In this chapter, you have studied the following points : 1. The theoretical (classical) probability of an event E, written as P(E), is defined as P (E) = Number of outcomes favourable to E Number of all possible outcomes of the experiment where we assume that the outcomes of the experiment are equally likely. 2. The probability of a sure event (or certain event) is 1. 3. The probability of an impossible event is 0. 4. The probability of an event E is a number P(E) such that 0  P (E)  1 5. An event having only one outcome is called an elementary event. The sum of the probabilities of all the elementary events of an experiment is 1. 6. For any event E, P (E) + P ( E ) = 1, where E stands for ‘not E’. E and E are called complementary events."
+    }
+  ]
+}

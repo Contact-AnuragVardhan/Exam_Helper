@@ -1,0 +1,38 @@
+{
+  "book_id": "ncert_class10_mathematics_reprint_2026_27",
+  "title": "Mathematics, Textbook for Class X (NCERT, Reprint 2026-27)",
+  "grade": 10,
+  "subject": "Mathematics",
+  "language": "en",
+  "language_declared_in_config": "hi",
+  "source_pdf": "G:\\My Drive\\Docs\\Jalta Sitara\\Exam Prep Rev 2\\Rev 2 Step 1 Contents\\10-Maths.pdf",
+  "pdf_page_count": 276,
+  "book_page_offset": 14,
+  "chapters": [
+    "ch01",
+    "ch02",
+    "ch03",
+    "ch04",
+    "ch05",
+    "ch06",
+    "ch07",
+    "ch08",
+    "ch09",
+    "ch10",
+    "ch11",
+    "ch12",
+    "ch13",
+    "ch14"
+  ],
+  "status": "WARN",
+  "warnings": [
+    "Book configuration language is Hindi but the PDF body is English NCERT Class X."
+  ],
+  "counts": {
+    "chapters": 14,
+    "topics": 55,
+    "exercises": 32,
+    "book_questions": 469,
+    "examinable_questions": 464
+  }
+}

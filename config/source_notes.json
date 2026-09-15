@@ -1,0 +1,39 @@
+{
+  "flags": [
+    {
+      "id": "book_language_mismatch",
+      "severity": "warn",
+      "text": "Book configuration says Language=Hindi, but the supplied 10-Maths.pdf is English NCERT Class X Mathematics (Reprint 2026-27). Indexed as English source. Exam body is still generated in Hindi. BOOK items are marked book_adapted when translated."
+    },
+    {
+      "id": "exam_pattern_pdf_missing",
+      "severity": "warn",
+      "text": "Specification lists Exam Pattern 9th to 12th All subjects.pdf. That PDF is not in the supplied files. Using the English translation DOCX files instead."
+    },
+    {
+      "id": "class10_math_weightage_not_supplied",
+      "severity": "warn",
+      "text": "The MPBSE translation does not contain a Class 10 Mathematics chapter-weight table. Class 9 Mathematics weights and Class 12 Mathematics (80 marks) weights are NOT used. chapter_weightage_status=not_supplied_or_not_verified."
+    },
+    {
+      "id": "class10_math_block_absent",
+      "severity": "warn",
+      "text": "CLASS 10 in the translation lists Hindi, Sanskrit, and Science. It does not list a Mathematics subject block. The 75-mark Q1-Q23 pattern is used because the spec allows it where supported by Grade 10 / sample-paper evidence, plus the recurring 75-mark pattern used for other Class 10 subjects and Class 9 Mathematics."
+    },
+    {
+      "id": "q1_syllabus_file_empty",
+      "severity": "info",
+      "text": "10 Math Syllabus Q1 Exam.txt is empty and was not used as a syllabus source."
+    },
+    {
+      "id": "internal_choice_not_invented",
+      "severity": "info",
+      "text": "Sample paper shows 'कोई 3' among Q21-Q25 (internal choice for 4-mark items). MPBSE translation says internal choice is generally provided in descriptive questions but does not give an explicit Class 10 Mathematics choice table. Internal choice is configurable and defaults to OFF so the Q21-Q23 x 4-mark structure is not invented beyond the specified 75-mark pattern."
+    },
+    {
+      "id": "header_language_vs_sample",
+      "severity": "info",
+      "text": "Specification requires English exam headers. The school sample paper header is Hindi. Build #1 follows the specification: English header, Hindi exam body."
+    }
+  ]
+}

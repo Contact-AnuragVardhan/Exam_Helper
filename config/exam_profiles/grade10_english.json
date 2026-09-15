@@ -1,0 +1,263 @@
+{
+  "profile_id": "mpbse_grade10_english_2025_26",
+  "grade": 10,
+  "subject": "English",
+  "board": "MPBSE",
+  "academic_year": "2025-26",
+  "default_total_marks": 80,
+  "default_duration_minutes": 180,
+  "exam_language": "en",
+  "header_language": "en",
+  "question_source_default": "MIXED",
+  "question_source_options": [
+    {"id": "BOOK", "book_percent": 100, "new_percent": 0},
+    {"id": "NEW", "book_percent": 0, "new_percent": 100},
+    {"id": "MIXED", "book_percent": 70, "new_percent": 30}
+  ],
+  "format_rules_file": "config/formats/grade10_english_formats.json",
+  "book_ids": ["ncert_class10_first_flight"],
+  "sample_exam_ids": ["grade10_english_2026_qe"],
+  "syllabus_authority": "english_q1_syllabus_txt",
+  "sample_role": "FORMAT/STYLE reference only; not syllabus authority",
+  "chapter_weightage_status": "not_supplied_or_not_verified",
+  "question_structure": {
+    "structure_id": "school_english_qe_80_sections_abcd",
+    "source": "10th English 2026 QE.docx school quarterly paper (80 marks / 3 hours). Sample literature titles that are outside the active syllabus are not used.",
+    "total_marks": 80,
+    "duration_minutes": 180,
+    "sections": [
+      {
+        "section_id": "A",
+        "name": "Reading",
+        "content_class": "READING",
+        "marks": 14
+      },
+      {
+        "section_id": "B",
+        "name": "Writing",
+        "content_class": "WRITING",
+        "marks": 13
+      },
+      {
+        "section_id": "C",
+        "name": "Grammar",
+        "content_class": "GRAMMAR",
+        "marks": 10
+      },
+      {
+        "section_id": "D",
+        "name": "Literature",
+        "content_class": "LITERATURE",
+        "marks": 43
+      }
+    ],
+    "groups": [
+      {
+        "question_number": 1,
+        "section_id": "A",
+        "content_class": "READING",
+        "format_id": "UNSEEN_PASSAGE_MCQ",
+        "subquestion_count": 5,
+        "marks_each": 1,
+        "total_marks": 5,
+        "source_class": "SKILL"
+      },
+      {
+        "question_number": 2,
+        "section_id": "A",
+        "content_class": "READING",
+        "format_id": "UNSEEN_PASSAGE_MCQ",
+        "subquestion_count": 5,
+        "marks_each": 1,
+        "total_marks": 5,
+        "source_class": "SKILL"
+      },
+      {
+        "question_number": 3,
+        "section_id": "A",
+        "content_class": "READING",
+        "format_id": "NOTE_MAKING",
+        "subquestion_count": 1,
+        "marks_each": 4,
+        "total_marks": 4,
+        "source_class": "SKILL"
+      },
+      {
+        "question_number": 4,
+        "section_id": "B",
+        "content_class": "WRITING",
+        "format_id": "APPLICATION_OR_LETTER",
+        "subquestion_count": 1,
+        "marks_each": 4,
+        "total_marks": 4,
+        "internal_or": true,
+        "source_class": "SKILL"
+      },
+      {
+        "question_number": 5,
+        "section_id": "B",
+        "content_class": "WRITING",
+        "format_id": "ESSAY",
+        "subquestion_count": 1,
+        "marks_each": 5,
+        "total_marks": 5,
+        "any_one_of": 4,
+        "source_class": "SKILL"
+      },
+      {
+        "question_number": 6,
+        "section_id": "B",
+        "content_class": "WRITING",
+        "format_id": "PICTURE_COMPOSITION",
+        "subquestion_count": 1,
+        "marks_each": 4,
+        "total_marks": 4,
+        "source_class": "SKILL"
+      },
+      {
+        "question_number": 7,
+        "section_id": "C",
+        "content_class": "GRAMMAR",
+        "format_id": "GRAMMAR_FILL_BLANK",
+        "subquestion_count": 6,
+        "attempt_any": 5,
+        "marks_each": 1,
+        "total_marks": 5,
+        "source_class": "SKILL"
+      },
+      {
+        "question_number": 8,
+        "section_id": "C",
+        "content_class": "GRAMMAR",
+        "format_id": "DO_AS_DIRECTED",
+        "subquestion_count": 6,
+        "attempt_any": 5,
+        "marks_each": 1,
+        "total_marks": 5,
+        "source_class": "SKILL"
+      },
+      {
+        "question_number": 9,
+        "sub_slot": "a",
+        "section_id": "D",
+        "content_class": "LITERATURE",
+        "format_id": "LITERATURE_EXTRACT_MCQ",
+        "kind": "poem",
+        "subquestion_count": 3,
+        "marks_each": 1,
+        "total_marks": 3,
+        "source_class": "LITERATURE"
+      },
+      {
+        "question_number": 9,
+        "sub_slot": "b",
+        "section_id": "D",
+        "content_class": "LITERATURE",
+        "format_id": "LITERATURE_EXTRACT_MCQ",
+        "kind": "prose",
+        "subquestion_count": 3,
+        "marks_each": 1,
+        "total_marks": 3,
+        "source_class": "LITERATURE"
+      },
+      {
+        "question_number": 10,
+        "section_id": "D",
+        "content_class": "LITERATURE",
+        "format_id": "LITERATURE_MCQ",
+        "subquestion_count": 4,
+        "marks_each": 1,
+        "total_marks": 4,
+        "source_class": "LITERATURE"
+      },
+      {
+        "question_number": 11,
+        "section_id": "D",
+        "content_class": "LITERATURE",
+        "format_id": "LITERATURE_SA_2",
+        "subquestion_count": 7,
+        "attempt_any": 6,
+        "marks_each": 2,
+        "total_marks": 12,
+        "source_class": "LITERATURE"
+      },
+      {
+        "question_number": 12,
+        "section_id": "D",
+        "content_class": "LITERATURE",
+        "format_id": "LITERATURE_POEM_SA",
+        "kind": "poem",
+        "subquestion_count": 3,
+        "attempt_any": 2,
+        "marks_each": 3,
+        "total_marks": 6,
+        "source_class": "LITERATURE"
+      },
+      {
+        "question_number": 13,
+        "section_id": "D",
+        "content_class": "LITERATURE",
+        "format_id": "LITERATURE_SA_3",
+        "kind": "prose",
+        "subquestion_count": 3,
+        "attempt_any": 2,
+        "marks_each": 3,
+        "total_marks": 6,
+        "source_class": "LITERATURE"
+      },
+      {
+        "question_number": 14,
+        "section_id": "D",
+        "content_class": "LITERATURE",
+        "format_id": "LITERATURE_LA_3",
+        "subquestion_count": 1,
+        "marks_each": 3,
+        "total_marks": 3,
+        "internal_or": true,
+        "source_class": "LITERATURE"
+      },
+      {
+        "question_number": 15,
+        "section_id": "D",
+        "content_class": "LITERATURE",
+        "format_id": "LITERATURE_LA_3",
+        "kind": "poem",
+        "subquestion_count": 1,
+        "marks_each": 3,
+        "total_marks": 3,
+        "internal_or": true,
+        "source_class": "LITERATURE"
+      },
+      {
+        "question_number": 16,
+        "section_id": "D",
+        "content_class": "LITERATURE",
+        "format_id": "LITERATURE_LA_3",
+        "kind": "prose",
+        "subquestion_count": 1,
+        "marks_each": 3,
+        "total_marks": 3,
+        "internal_or": true,
+        "source_class": "LITERATURE"
+      }
+    ]
+  },
+  "validation_rules": {
+    "content_gate_hard_fail": true,
+    "marks_must_match_total": true,
+    "format_counts_must_match_blueprint": true,
+    "literature_must_be_in_syllabus": true,
+    "sample_titles_are_not_syllabus": true,
+    "exam_body_script": "latin",
+    "header_language": "en",
+    "duplicates_hard_fail": true,
+    "answer_key_required": true,
+    "skill_sections_skip_literature_gate": ["READING", "WRITING", "GRAMMAR"]
+  },
+  "notes": [
+    "Syllabus file is content authority. Sample QE is FORMAT/STYLE only.",
+    "Do not use A Tiger in the Zoo or A Triumph of Surgery unless the active syllabus includes them and the source book is imported.",
+    "Reading/Writing/Grammar are SKILL components.",
+    "Literature prefers BOOK questions from First Flight within the allowed syllabus."
+  ]
+}

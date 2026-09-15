@@ -1,0 +1,27 @@
+.env
+.env.*
+!.env.example
+!render.env.example
+
+.venv/
+venv/
+env/
+ENV/
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+*.iml
+
+# Local/transient runtime files. Durable app state is stored in PostgreSQL.
+*.db
+*.sqlite
+*.sqlite3
+output/exams/
+logs/
+data/teacher/
+
+Thumbs.db
+Desktop.ini

@@ -1,0 +1,40 @@
+{
+  "book_id": "ncert_class10_first_flight",
+  "title": "First Flight, Textbook in English for Class X (NCERT)",
+  "grade": 10,
+  "subject": "English",
+  "language": "en",
+  "book_structure": "narrative",
+  "source_pdf": "G:\\My Drive\\Docs\\Jalta Sitara\\Exam Prep Rev 2 - Math 10 English 10 Best - Rev 2\\Rev 2 Step 1 Contents\\10-English-FirstFlight.pdf",
+  "pdf_page_count": 152,
+  "book_page_offset": 12,
+  "chapters": [
+    "ff_a_letter_to_god",
+    "ff_dust_of_snow",
+    "ff_fire_and_ice",
+    "ff_nelson_mandela_long_walk_to_freedom",
+    "ff_a_tiger_in_the_zoo",
+    "ff_two_stories_about_flying",
+    "ff_how_to_tell_wild_animals",
+    "ff_the_ball_poem",
+    "ff_from_the_diary_of_anne_frank",
+    "ff_amanda",
+    "ff_glimpses_of_india",
+    "ff_the_trees",
+    "ff_mijbil_the_otter",
+    "ff_fog",
+    "ff_madam_rides_the_bus",
+    "ff_the_tale_of_custard_the_dragon",
+    "ff_the_sermon_at_benares",
+    "ff_for_anne_gregory",
+    "ff_the_proposal"
+  ],
+  "status": "READY",
+  "warnings": [],
+  "counts": {
+    "chapters": 19,
+    "topics": 21,
+    "book_questions": 139,
+    "examinable_questions": 139
+  }
+}

@@ -1,0 +1,261 @@
+{
+  "subject": "Mathematics",
+  "grade": 10,
+  "formats": [
+    {
+      "format_id": "MCQ",
+      "format_name": "Correct option / MCQ",
+      "marks": 1,
+      "student_task": "Choose the single correct option and write it.",
+      "expected_answer_length": "One option label (a/b/c/d) plus the option value in the answer key.",
+      "wording_constraints": [
+        "Hindi stem.",
+        "Exactly four options labelled (a) (b) (c) (d).",
+        "One unambiguously correct option.",
+        "Keep mathematical symbols in standard notation; do not prose-ify formulas."
+      ],
+      "mathematical_rigor": "Must have exactly one correct option under Class 10 NCERT definitions. Distractors should be plausible calculation or concept errors, not nonsense.",
+      "suitability": {
+        "BOOK": "NCERT exercises are rarely native MCQs. Derive an MCQ from an eligible exercise/example concept and mark source_type=book_adapted with the source question id.",
+        "NEW": "Create a fresh MCQ from allowed topic excerpts only."
+      },
+      "allowed_question_sources": ["BOOK", "NEW", "MIXED"],
+      "generation_rules": {
+        "subquestions_per_question": 6,
+        "options": 4,
+        "language": "hi"
+      },
+      "validation_rules": [
+        "exactly 4 options",
+        "exactly one correct option recorded in answer key",
+        "mapped to allowed chapter/topic",
+        "1 mark"
+      ],
+      "examples": [
+        {
+          "style_note": "Short Hindi stem about rational/irrational classification, four options, one correct. Inspired by sample Q1 style, not copied.",
+          "stem_pattern": "√n एक …… संख्या है / नहीं है"
+        }
+      ]
+    },
+    {
+      "format_id": "FILL_BLANK",
+      "format_name": "Fill in the blanks",
+      "marks": 1,
+      "student_task": "Write the missing word, number, or short expression.",
+      "expected_answer_length": "One word, number, or short formula.",
+      "wording_constraints": [
+        "One blank per subquestion.",
+        "Hindi sentence with a clear blank.",
+        "Blank should have a unique short answer."
+      ],
+      "mathematical_rigor": "Answer must follow a stated NCERT identity, definition, or unique computation from the allowed portion.",
+      "suitability": {
+        "BOOK": "Prefer blanks that restate an eligible book identity (for example HCF×LCM). Mark book_adapted if translated or slightly reworded.",
+        "NEW": "New numbers/context allowed; concept must stay inside allowed topics."
+      },
+      "allowed_question_sources": ["BOOK", "NEW", "MIXED"],
+      "generation_rules": {
+        "subquestions_per_question": 6,
+        "language": "hi"
+      },
+      "validation_rules": [
+        "contains a blank",
+        "short unique answer",
+        "1 mark"
+      ],
+      "examples": [
+        {
+          "style_note": "Identity or definition completion, e.g. HCF(a,b)×LCM(a,b)=ab. Sample-paper style, original wording."
+        }
+      ]
+    },
+    {
+      "format_id": "TRUE_FALSE",
+      "format_name": "True / False",
+      "marks": 1,
+      "student_task": "Write सत्य or असत्य.",
+      "expected_answer_length": "One word: सत्य or असत्य.",
+      "wording_constraints": [
+        "A complete Hindi statement.",
+        "Clearly true or clearly false against the allowed textbook content.",
+        "Avoid trick punctuation; do not mix two claims."
+      ],
+      "mathematical_rigor": "Truth value must be decidable from the allowed chapters. False statements should invert a real definition or theorem, not introduce out-of-syllabus objects.",
+      "suitability": {
+        "BOOK": "Restate or negate a book fact from an eligible exercise/section.",
+        "NEW": "New wording from allowed concepts only."
+      },
+      "allowed_question_sources": ["BOOK", "NEW", "MIXED"],
+      "generation_rules": {
+        "subquestions_per_question": 6,
+        "language": "hi"
+      },
+      "validation_rules": [
+        "answer is सत्य or असत्य",
+        "1 mark"
+      ],
+      "examples": [
+        {
+          "style_note": "Direct statement such as '√5 एक अपरिमेय संख्या है' — sample style, not a copy of the sample list."
+        }
+      ]
+    },
+    {
+      "format_id": "MATCH_COLUMNS",
+      "format_name": "Match the columns",
+      "marks": 1,
+      "student_task": "Match each item in column A with the correct item in column B.",
+      "expected_answer_length": "Six pairs, e.g. (1)-(d).",
+      "wording_constraints": [
+        "Column A has 6 prompts.",
+        "Column B has 6 matches (order shuffled).",
+        "Each A item has exactly one correct B partner.",
+        "Hindi labels; math symbols kept intact."
+      ],
+      "mathematical_rigor": "Pairs must be uniquely correct. Do not reuse the same B item for two A items.",
+      "suitability": {
+        "BOOK": "Use only natural one-to-one book relationships (HCF value, degree, discriminant, unique/parallel/coincident conditions). Never force a normal solve/prove exercise into MATCH by splitting it into filler words (multiply, expand, equation, calculation, verification).",
+        "NEW": "New pairings from allowed topics only."
+      },
+      "allowed_question_sources": ["BOOK", "NEW", "MIXED"],
+      "generation_rules": {
+        "subquestions_per_question": 6,
+        "language": "hi"
+      },
+      "validation_rules": [
+        "6 A items and 6 B items",
+        "bijection recorded in answer key",
+        "6 marks total at 1 each",
+        "each A has exactly one defensible B",
+        "no artificial filler pairs",
+        "every pair traces to allowed book chapter/topic/page"
+      ],
+      "examples": [
+        {
+          "style_note": "A-side: standard form / zeroes / HCF prompt. B-side: matching expression or value. Sample Q4 layout, original pairs."
+        }
+      ]
+    },
+    {
+      "format_id": "ONE_WORD_OR_SENTENCE",
+      "format_name": "One-word / one-sentence answer",
+      "marks": 1,
+      "student_task": "Answer in one word or one sentence.",
+      "expected_answer_length": "At most one sentence or a short formula.",
+      "wording_constraints": [
+        "Ask for a definition, condition, standard form, or named theorem from the allowed portion.",
+        "Do not require multi-step working."
+      ],
+      "mathematical_rigor": "Answer must be the NCERT-standard statement or formula from the allowed chapters.",
+      "suitability": {
+        "BOOK": "Use definitions/theorems that appear in eligible sections (FTA, cubic standard form, consistent pair).",
+        "NEW": "Same, with fresh wording."
+      },
+      "allowed_question_sources": ["BOOK", "NEW", "MIXED"],
+      "generation_rules": {
+        "subquestions_per_question": 6,
+        "language": "hi"
+      },
+      "validation_rules": [
+        "answer exists and is short",
+        "1 mark"
+      ],
+      "examples": [
+        {
+          "style_note": "Request a named theorem or standard form in one sentence, as in sample Q5, without copying those six stems."
+        }
+      ]
+    },
+    {
+      "format_id": "VERY_SHORT_2_MARK",
+      "format_name": "Very short answer (2 marks)",
+      "marks": 2,
+      "student_task": "Give a brief working or a short result with essential steps.",
+      "expected_answer_length": "About 2 to 6 lines / 2 key steps.",
+      "wording_constraints": [
+        "One focused task: find zeroes, write squares/cubes, state a short formula, solve a tiny case.",
+        "Hindi instructions; keep algebra in symbols."
+      ],
+      "mathematical_rigor": "Working must be complete enough for 2 marks: method + answer, or a correctly stated result.",
+      "suitability": {
+        "BOOK": "Prefer actual exercise items of similar size (find zeroes of a given polynomial). Preserve numbers when source_type=book; if translated only, still book_adapted.",
+        "NEW": "Change numbers/context; stay inside allowed chapters."
+      },
+      "allowed_question_sources": ["BOOK", "NEW", "MIXED"],
+      "generation_rules": {
+        "subquestions_per_question": 1,
+        "language": "hi"
+      },
+      "validation_rules": [
+        "2 marks",
+        "answer key has result and brief steps"
+      ],
+      "examples": [
+        {
+          "style_note": "Find zeroes of a small quadratic, or write a short definition. Sample Q6-Q17 length, original polynomials."
+        }
+      ]
+    },
+    {
+      "format_id": "SHORT_3_MARK",
+      "format_name": "Short answer (3 marks)",
+      "marks": 3,
+      "student_task": "Solve with working; may include two small parts.",
+      "expected_answer_length": "About half a page / 4 to 8 steps.",
+      "wording_constraints": [
+        "May use (i) (ii) subparts that together are 3 marks.",
+        "Require verification or a constructed polynomial, not only a one-line recall."
+      ],
+      "mathematical_rigor": "Must need a method (factorisation, relations of zeroes and coefficients, or a two-part check).",
+      "suitability": {
+        "BOOK": "Use eligible exercise items of this size, e.g. zeroes plus coefficient check.",
+        "NEW": "New coefficients from allowed polynomial / equation topics."
+      },
+      "allowed_question_sources": ["BOOK", "NEW", "MIXED"],
+      "generation_rules": {
+        "subquestions_per_question": 1,
+        "language": "hi"
+      },
+      "validation_rules": [
+        "3 marks",
+        "answer key has working"
+      ],
+      "examples": [
+        {
+          "style_note": "Two small quadratics: find zeroes and verify sum/product vs coefficients. Sample Q18 style, original items."
+        }
+      ]
+    },
+    {
+      "format_id": "LONG_4_MARK",
+      "format_name": "Long answer (4 marks)",
+      "marks": 4,
+      "student_task": "Give a structured solution: proof or full method for a pair of equations / nature of roots.",
+      "expected_answer_length": "A full solution with reasons; typically 8+ steps or a short proof.",
+      "wording_constraints": [
+        "Hindi narrative for proof language; algebra in symbols.",
+        "Do not ask for constructions or chapters outside the allowed set."
+      ],
+      "mathematical_rigor": "Proofs must use the allowed chapter method (e.g. contradiction for √p). Equation solutions must show a complete algebraic method.",
+      "suitability": {
+        "BOOK": "Use eligible prove/solve exercise items (irrationality proofs, linear pair, nature of roots).",
+        "NEW": "New numbers; same methods from allowed chapters only."
+      },
+      "allowed_question_sources": ["BOOK", "NEW", "MIXED"],
+      "generation_rules": {
+        "subquestions_per_question": 1,
+        "language": "hi"
+      },
+      "validation_rules": [
+        "4 marks",
+        "answer key has full working"
+      ],
+      "examples": [
+        {
+          "style_note": "Prove a specific square root is irrational, or solve a pair of linear equations. Sample Q21-Q23 style, original numbers."
+        }
+      ]
+    }
+  ]
+}

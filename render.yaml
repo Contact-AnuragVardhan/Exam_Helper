@@ -1,0 +1,45 @@
+services:
+  - type: web
+    name: exam-helper-whatsapp
+    runtime: python
+    plan: starter
+    region: virginia
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: bash start.sh
+    healthCheckPath: /health
+    autoDeployTrigger: commit
+
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.10
+
+      # Same Meta/WhatsApp names used by Student Evaluator.
+      - key: VERIFY_TOKEN
+        sync: false
+      - key: WHATSAPP_TOKEN
+        sync: false
+      - key: WHATSAPP_PHONE_NUMBER_ID
+        sync: false
+      - key: WHATSAPP_GRAPH_VERSION
+        value: v25.0
+
+      # PostgreSQL stores teacher lookup, WhatsApp sessions/dedupe,
+      # exam metadata, generated JSON/text, and both PDFs.
+      - key: DATABASE_URL
+        sync: false
+      - key: DATABASE_AUTO_CREATE_TABLES
+        value: "true"
+
+      # Existing Exam_Helper generation settings.
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-4o
+      - key: MOCK_GENERATION
+        value: "false"
+      - key: FAST_EXAM_MODE
+        value: "true"
+
+      # Optional Linux-accessible Devanagari font path.
+      - key: HINDI_FONT_PATH
+        sync: false

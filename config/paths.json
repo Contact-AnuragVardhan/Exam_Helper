@@ -1,0 +1,19 @@
+{
+  "book_pdf": "../Rev 2 Step 1 Contents/10-Maths.pdf",
+  "book_configuration": "../Rev 2 Step 1 Contents/10 Math Book Configuration.txt",
+  "sample_exam_docx": "../Rev 2 Step 1 Contents/10th Math 2026 Sample Exam.docx",
+  "q1_syllabus_txt": "../Rev 2 Step 1 Contents/10 Math Syllabus Q1 Exam.txt",
+  "english_book_pdf": "../Rev 2 Step 1 Contents/10-English-FirstFlight.pdf",
+  "english_book_configuration": "../Rev 2 Step 1 Contents/10 English  Book Configuration.txt",
+  "english_q1_syllabus_txt": "../Rev 2 Step 1 Contents/10 English Syllabus Q1 Exam.txt",
+  "english_sample_exam_docx": "../Rev 2 Step 1 Contents/10th English 2026 QE.docx",
+  "mpbse_marking_docx": "../Rev 2 Step 1 Contents/MPBSE_2025-26 Exam Marking and Question FORMAT.docx",
+  "mpbse_translation_docx": "../MPBSE_2025-26_Exam_Pattern_Grades_9-12_English_Translation.docx",
+  "missing_sources": [
+    {
+      "expected": "Exam Pattern 9th to 12th All subjects.pdf",
+      "status": "not_supplied",
+      "used_instead": "MPBSE_2025-26_Exam_Pattern_Grades_9-12_English_Translation.docx and MPBSE_2025-26 Exam Marking and Question FORMAT.docx"
+    }
+  ]
+}
